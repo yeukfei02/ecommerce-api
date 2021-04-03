@@ -1,0 +1,23 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### 0.1.1 (2021-04-03)
+
+
+### Features
+
+* 🎸 add .github folder ([d97a26a](https://github.com/yeukfei02/ecommerce-api/commit/d97a26a7bade8cc8b5f32a5346200c9905059526))
+* 🎸 add Procfile ([74eedcf](https://github.com/yeukfei02/ecommerce-api/commit/74eedcf8df515351be57422758c024a20ee54c84))
+* 🎸 create first rails project ([95e5473](https://github.com/yeukfei02/ecommerce-api/commit/95e54739d5df7ad4b12730261e46920330bddf91))
+
+
+### Bug Fixes
+
+* 🐛 fix Procfile ([9e4e768](https://github.com/yeukfei02/ecommerce-api/commit/9e4e768536b890ba350bb5bf2bf49e6204f33ea8))
+* 🐛 fix Procfile ([2d32557](https://github.com/yeukfei02/ecommerce-api/commit/2d3255770b81833732eb89f7d614898a4df2fb5b))
+* 🐛 fix Procfile ([b0946d2](https://github.com/yeukfei02/ecommerce-api/commit/b0946d2ea1c0fa01a9759f8b86da6a7395e7f571))
+* 🐛 fix Procfile ([485d9e5](https://github.com/yeukfei02/ecommerce-api/commit/485d9e551499a22bdbb897283f01012d55b54221))
+* 🐛 fix Procfile ([5b62edf](https://github.com/yeukfei02/ecommerce-api/commit/5b62edfb7e138e4f3186066b108ae839ff43fb34))
+* 🐛 try config.eager_load to false in config/production.rb ([873a392](https://github.com/yeukfei02/ecommerce-api/commit/873a3929f63709bf9b4b1fef5e6ef744565a3f9d))
+* 🐛 update Gemfile.lock ([c06b30a](https://github.com/yeukfei02/ecommerce-api/commit/c06b30a53df23f64e6d26b923adfbe8895ffe901))
