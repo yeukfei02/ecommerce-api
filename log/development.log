@@ -1,0 +1,1565 @@
+Started GET "/" for ::1 at 2021-04-03 10:24:45 +0800
+  
+ActiveRecord::ConnectionNotEstablished (could not translate host name "ENV['HOST']" to address: nodename nor servname provided, or not known
+):
+  
+activerecord (6.1.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.3.1) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.3.1) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.3.1) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.3.1) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.3.1) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/" for ::1 at 2021-04-03 10:29:28 +0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/donaldwu/.rvm/rubies/ruby-2.6.6/lib/ruby/gems/2.6.0/gems/railties-6.1.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/donaldwu/.rvm/rubies/ruby-2.6.6/lib/ruby/gems/2.6.0/gems/railties-6.1.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.9ms | Allocations: 354)
+Completed 200 OK in 25ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 3275)
+
+
+Started GET "/" for ::1 at 2021-04-03 10:29:36 +0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/donaldwu/.rvm/rubies/ruby-2.6.6/lib/ruby/gems/2.6.0/gems/railties-6.1.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/donaldwu/.rvm/rubies/ruby-2.6.6/lib/ruby/gems/2.6.0/gems/railties-6.1.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 10.7ms | Allocations: 290)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 1165)
+
+
+Started GET "/" for ::1 at 2021-04-03 10:31:17 +0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/donaldwu/.rvm/rubies/ruby-2.6.6/lib/ruby/gems/2.6.0/gems/railties-6.1.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/donaldwu/.rvm/rubies/ruby-2.6.6/lib/ruby/gems/2.6.0/gems/railties-6.1.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.6ms | Allocations: 354)
+Completed 200 OK in 19ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 2656)
+
+
+Started GET "/" for ::1 at 2021-04-03 10:33:09 +0800
+  
+SyntaxError (/Users/donaldwu/Documents/ecommerce-api/app/controllers/main_controller.rb:6: syntax error, unexpected ':', expecting =>
+... render :json => data, :status: 200
+...                              ^):
+  
+app/controllers/main_controller.rb:6: syntax error, unexpected ':', expecting =>
+app/controllers/main_controller.rb:6: syntax error, unexpected ':', expecting =>
+app/controllers/main_controller.rb:6: syntax error, unexpected ':', expecting =>
+Started GET "/" for ::1 at 2021-04-03 10:33:24 +0800
+Processing by MainController#index as HTML
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1142)
+
+
+Started GET "/" for ::1 at 2021-04-03 10:33:25 +0800
+Processing by MainController#index as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 207)
+
+
+Started GET "/" for ::1 at 2021-04-03 10:33:42 +0800
+Processing by MainController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+  [1m[35m (322.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (222.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (409.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(334855703497570395)[0m
+  [1m[35m (211.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20210403023730)
+  [1m[36mTRANSACTION (711.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (228.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying, "password" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (271.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210403023730"]]
+  [1m[36mTRANSACTION (425.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (306.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (210.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (304.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-04-03 02:40:20.890521"], ["updated_at", "2021-04-03 02:40:20.890521"]]
+  [1m[36mTRANSACTION (704.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1295.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(334855703497570395)[0m
+  [1m[35m (212.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2021-04-03 10:46:06 +0800
+  [1m[35m (211.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as */*
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1194)
+
+
+Started POST "/" for ::1 at 2021-04-03 10:46:47 +0800
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/api/users" for ::1 at 2021-04-03 10:47:03 +0800
+Processing by UsersController#create as */*
+  Parameters: {"email"=>"test@test.com", "password"=>"[FILTERED]", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 535.1ms | Allocations: 478)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (6.1.3.1) lib/action_controller/metal/request_forgery_protection.rb:211:in `handle_unverified_request'
+actionpack (6.1.3.1) lib/action_controller/metal/request_forgery_protection.rb:243:in `handle_unverified_request'
+actionpack (6.1.3.1) lib/action_controller/metal/request_forgery_protection.rb:238:in `verify_authenticity_token'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:427:in `block in make_lambda'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+actionpack (6.1.3.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:512:in `block in invoke_before'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:512:in `each'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:512:in `invoke_before'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:115:in `block in run_callbacks'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.3.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.3.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.3.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.3.1) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.3.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.3.1) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.3.1) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.3.1) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.3.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.3.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started POST "/api/users" for ::1 at 2021-04-03 10:47:40 +0800
+Processing by UsersController#create as */*
+  Parameters: {"email"=>"test@test.com", "password"=>"[FILTERED]", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (271.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Create (614.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "test@test.com"], ["password", "test"], ["created_at", "2021-04-03 02:47:42.645649"], ["updated_at", "2021-04-03 02:47:42.645649"]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (409.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Completed 200 OK in 1532ms (Views: 0.2ms | ActiveRecord: 2342.0ms | Allocations: 5573)
+
+
+Started GET "/" for ::1 at 2021-04-03 10:47:47 +0800
+Processing by MainController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 205)
+
+
+Started GET "/api/users" for ::1 at 2021-04-03 10:47:54 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/api/users"):
+  
+Started GET "/api/users" for ::1 at 2021-04-03 10:48:13 +0800
+Processing by UsersController#index as */*
+  [1m[36mUser Load (304.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:29:in `index'
+Completed 200 OK in 1350ms (Views: 308.0ms | ActiveRecord: 1041.2ms | Allocations: 4657)
+
+
+Started GET "/api/users/1" for ::1 at 2021-04-03 10:48:17 +0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (404.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:33:in `show'
+Completed 200 OK in 1141ms (Views: 0.3ms | ActiveRecord: 615.0ms | Allocations: 1577)
+
+
+Started GET "/api/users" for ::1 at 2021-04-03 10:52:47 +0800
+Processing by UsersController#index as */*
+  [1m[36mUser Load (297.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:29:in `index'
+Completed 200 OK in 1450ms (Views: 216.0ms | ActiveRecord: 1232.8ms | Allocations: 4583)
+
+
+Started GET "/" for ::1 at 2021-04-03 10:53:13 +0800
+Processing by MainController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 240)
+
+
+Started GET "/" for ::1 at 2021-04-03 10:53:14 +0800
+Processing by MainController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 201)
+
+
+Started GET "/api/users/1" for ::1 at 2021-04-03 10:53:16 +0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (305.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:33:in `show'
+Completed 200 OK in 1285ms (Views: 0.4ms | ActiveRecord: 1067.3ms | Allocations: 4425)
+
+
+Started GET "/api/users" for ::1 at 2021-04-03 10:53:21 +0800
+Processing by UsersController#index as */*
+  [1m[36mUser Load (220.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:29:in `index'
+Completed 200 OK in 454ms (Views: 232.4ms | ActiveRecord: 220.8ms | Allocations: 1179)
+
+
+Started GET "/api/users/1" for ::1 at 2021-04-03 10:53:58 +0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (209.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:33:in `show'
+Completed 200 OK in 1895ms (Views: 0.3ms | ActiveRecord: 1678.8ms | Allocations: 4405)
+
+
+Started GET "/api/users" for ::1 at 2021-04-03 10:54:02 +0800
+Processing by UsersController#index as */*
+  [1m[36mUser Load (215.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:29:in `index'
+Completed 200 OK in 427ms (Views: 211.9ms | ActiveRecord: 215.1ms | Allocations: 1179)
+
+
+Started GET "/" for ::1 at 2021-04-03 10:54:05 +0800
+Processing by MainController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 204)
+
+
+Started POST "/api/users" for ::1 at 2021-04-03 10:54:13 +0800
+Processing by UsersController#create as */*
+  Parameters: {"email"=>"test2@test.com", "password"=>"[FILTERED]", "user"=>{"email"=>"test2@test.com", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (211.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Create (212.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "test2@test.com"], ["password", "test2"], ["created_at", "2021-04-03 02:54:14.166552"], ["updated_at", "2021-04-03 02:54:14.166552"]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (252.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Completed 200 OK in 892ms (Views: 0.3ms | ActiveRecord: 676.2ms | Allocations: 2438)
+
+
+Started GET "/api/users" for ::1 at 2021-04-03 10:54:16 +0800
+Processing by UsersController#index as */*
+  [1m[36mUser Load (211.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:29:in `index'
+Completed 200 OK in 427ms (Views: 215.1ms | ActiveRecord: 211.4ms | Allocations: 1276)
+
+
+Started GET "/api/users/1" for ::1 at 2021-04-03 10:54:20 +0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (210.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:33:in `show'
+Completed 200 OK in 427ms (Views: 0.3ms | ActiveRecord: 210.9ms | Allocations: 998)
+
+
+  [1m[35m (209.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(334855703497570395)[0m
+  [1m[35m (209.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateOrders (20210403025523)
+  [1m[36mTRANSACTION (327.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (307.3ms)[0m  [1m[35mALTER TABLE "orders" ADD "users_id" bigint[0m
+  [1m[36mTRANSACTION (302.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (305.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(334855703497570395)[0m
+  [1m[35m (616.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(334855703497570395)[0m
+  [1m[35m (287.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateOrders (20210403025523)
+  [1m[36mTRANSACTION (305.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (302.1ms)[0m  [1m[35mCREATE TABLE "orders" ("id" bigserial primary key, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (303.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210403025523"]]
+  [1m[36mTRANSACTION (217.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (210.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (210.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(334855703497570395)[0m
+  [1m[35m (300.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (215.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(334855703497570395)[0m
+  [1m[35m (210.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddOrdersForeignKey (20210403025919)
+  [1m[36mTRANSACTION (210.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (233.6ms)[0m  [1m[35mALTER TABLE "orders" ADD "users_id" bigint[0m
+  [1m[35m (305.2ms)[0m  [1m[35mCREATE INDEX "index_orders_on_users_id" ON "orders" ("users_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (508.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210403025919"]]
+  [1m[36mTRANSACTION (303.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (615.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (213.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(334855703497570395)[0m
+  [1m[35m (307.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api/users/1" for ::1 at 2021-04-03 11:02:12 +0800
+  [1m[35m (442.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (365.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:33:in `show'
+Completed 200 OK in 1589ms (Views: 0.6ms | ActiveRecord: 1319.0ms | Allocations: 6512)
+
+
+Started POST "/api/orders" for ::1 at 2021-04-03 11:02:38 +0800
+Processing by OrdersController#create as */*
+  Parameters: {"users_id"=>1, "order"=>{"users_id"=>1}}
+  [1m[36mTRANSACTION (211.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/orders_controller.rb:6:in `create'
+  [1m[36mOrder Create (291.1ms)[0m  [1m[32mINSERT INTO "orders" ("created_at", "updated_at", "users_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2021-04-03 03:02:40.246688"], ["updated_at", "2021-04-03 03:02:40.246688"], ["users_id", 1]]
+  ↳ app/controllers/orders_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (217.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/orders_controller.rb:6:in `create'
+Completed 200 OK in 1953ms (Views: 0.3ms | ActiveRecord: 2152.1ms | Allocations: 4359)
+
+
+Started GET "/api/orders" for ::1 at 2021-04-03 11:02:48 +0800
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (210.0ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:28:in `index'
+Completed 200 OK in 425ms (Views: 214.4ms | ActiveRecord: 210.0ms | Allocations: 1194)
+
+
+Started POST "/api/orders" for ::1 at 2021-04-03 11:02:53 +0800
+Processing by OrdersController#create as */*
+  Parameters: {"users_id"=>2, "order"=>{"users_id"=>2}}
+  [1m[36mTRANSACTION (212.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/orders_controller.rb:6:in `create'
+  [1m[36mOrder Create (234.7ms)[0m  [1m[32mINSERT INTO "orders" ("created_at", "updated_at", "users_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2021-04-03 03:02:54.124218"], ["updated_at", "2021-04-03 03:02:54.124218"], ["users_id", 2]]
+  ↳ app/controllers/orders_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (304.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/orders_controller.rb:6:in `create'
+Completed 200 OK in 969ms (Views: 0.2ms | ActiveRecord: 751.1ms | Allocations: 2422)
+
+
+Started GET "/api/orders" for ::1 at 2021-04-03 11:02:56 +0800
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (210.7ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:28:in `index'
+Completed 200 OK in 433ms (Views: 221.5ms | ActiveRecord: 210.7ms | Allocations: 1250)
+
+
+Started GET "/api/orders/2" for ::1 at 2021-04-03 11:03:08 +0800
+Processing by OrdersController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mOrder Load (210.9ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:32:in `show'
+Completed 200 OK in 633ms (Views: 1.1ms | ActiveRecord: 210.9ms | Allocations: 1075)
+
+
+Started GET "/api/orders/1" for ::1 at 2021-04-03 11:03:11 +0800
+Processing by OrdersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mOrder Load (209.9ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:32:in `show'
+Completed 200 OK in 434ms (Views: 0.3ms | ActiveRecord: 209.9ms | Allocations: 977)
+
+
+Started GET "/api/orders/1" for ::1 at 2021-04-03 11:03:23 +0800
+Processing by OrdersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mOrder Load (332.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:32:in `show'
+Completed 200 OK in 1665ms (Views: 0.6ms | ActiveRecord: 977.0ms | Allocations: 3913)
+
+
+  [1m[35m (297.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(334855703497570395)[0m
+  [1m[35m (305.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateShops (20210403030933)
+  [1m[36mTRANSACTION (502.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (306.3ms)[0m  [1m[35mCREATE TABLE "shops" ("id" bigserial primary key, "name" character varying, "address" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (216.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210403030933"]]
+  [1m[36mTRANSACTION (383.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateBooks (20210403031009)
+  [1m[36mTRANSACTION (305.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (406.6ms)[0m  [1m[35mCREATE TABLE "books" ("id" bigserial primary key, "name" character varying, "author" character varying, "price" float, "quantity" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (305.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210403031009"]]
+  [1m[36mTRANSACTION (304.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (306.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (393.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(334855703497570395)[0m
+  [1m[35m (218.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (301.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(334855703497570395)[0m
+  [1m[35m (232.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddBooksForeignKey (20210403031204)
+  [1m[36mTRANSACTION (657.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (211.0ms)[0m  [1m[35mALTER TABLE "books" ADD "shops_id" bigint[0m
+  [1m[35m (250.9ms)[0m  [1m[35mCREATE INDEX "index_books_on_shops_id" ON "books" ("shops_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (309.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210403031204"]]
+  [1m[36mTRANSACTION (306.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (293.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (711.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(334855703497570395)[0m
+  [1m[35m (415.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (299.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(334855703497570395)[0m
+  [1m[35m (299.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddOrdersTableShopsForeignKey (20210403031521)
+  [1m[36mTRANSACTION (300.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (301.9ms)[0m  [1m[35mALTER TABLE "orders" ADD "shops_id" bigint[0m
+  [1m[35m (307.8ms)[0m  [1m[35mCREATE INDEX "index_orders_on_shops_id" ON "orders" ("shops_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (213.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210403031521"]]
+  [1m[36mTRANSACTION (292.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (210.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (211.0ms)[0m  [1m[34mSELECT pg_advisory_unlock(334855703497570395)[0m
+  [1m[35m (307.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2021-04-03 11:24:41 +0800
+  [1m[35m (307.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as */*
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1206)
+
+
+Started POST "/api/users" for ::1 at 2021-04-03 11:26:04 +0800
+Processing by UsersController#create as */*
+  Parameters: {"email"=>"test3@test.com", "password"=>"[FILTERED]", "user"=>{"email"=>"test3@test.com", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (404.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Create (215.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "test3@test.com"], ["password", "test3"], ["created_at", "2021-04-03 03:26:05.641458"], ["updated_at", "2021-04-03 03:26:05.641458"]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (221.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Completed 200 OK in 1078ms (Views: 0.3ms | ActiveRecord: 1592.6ms | Allocations: 5229)
+
+
+Started GET "/api/users" for ::1 at 2021-04-03 11:26:21 +0800
+Processing by UsersController#index as */*
+  [1m[36mUser Load (250.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:29:in `index'
+Completed 200 OK in 493ms (Views: 242.8ms | ActiveRecord: 250.2ms | Allocations: 1450)
+
+
+Started GET "/api/users/1" for ::1 at 2021-04-03 11:27:22 +0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (309.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:33:in `show'
+Completed 200 OK in 1202ms (Views: 0.9ms | ActiveRecord: 677.4ms | Allocations: 3597)
+
+
+Started POST "/api/shops" for ::1 at 2021-04-03 11:28:06 +0800
+Processing by ShopsController#create as */*
+  Parameters: {"name"=>"shop", "address"=>"hongkong", "shop"=>{"name"=>"shop", "address"=>"hongkong"}}
+  [1m[36mTRANSACTION (211.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/shops_controller.rb:7:in `create'
+  [1m[36mShop Create (214.0ms)[0m  [1m[32mINSERT INTO "shops" ("name", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "shop"], ["address", "hongkong"], ["created_at", "2021-04-03 03:28:07.200107"], ["updated_at", "2021-04-03 03:28:07.200107"]]
+  ↳ app/controllers/shops_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (212.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/shops_controller.rb:7:in `create'
+Completed 200 OK in 1136ms (Views: 0.3ms | ActiveRecord: 1338.6ms | Allocations: 4809)
+
+
+Started GET "/api/shops" for ::1 at 2021-04-03 11:28:14 +0800
+Processing by ShopsController#index as */*
+  [1m[36mShop Load (212.4ms)[0m  [1m[34mSELECT "shops".* FROM "shops"[0m
+  ↳ app/controllers/shops_controller.rb:29:in `index'
+Completed 200 OK in 436ms (Views: 223.6ms | ActiveRecord: 212.4ms | Allocations: 1214)
+
+
+Started POST "/api/shops" for ::1 at 2021-04-03 11:28:49 +0800
+Processing by ShopsController#create as */*
+  Parameters: {"name"=>"shop2", "address"=>"hongkong", "shop"=>{"name"=>"shop2", "address"=>"hongkong"}}
+  [1m[36mTRANSACTION (231.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/shops_controller.rb:7:in `create'
+  [1m[36mShop Create (401.9ms)[0m  [1m[32mINSERT INTO "shops" ("name", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "shop2"], ["address", "hongkong"], ["created_at", "2021-04-03 03:28:49.676633"], ["updated_at", "2021-04-03 03:28:49.676633"]]
+  ↳ app/controllers/shops_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (646.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/shops_controller.rb:7:in `create'
+Completed 200 OK in 1518ms (Views: 0.3ms | ActiveRecord: 1279.8ms | Allocations: 2492)
+
+
+Started GET "/api/shops" for ::1 at 2021-04-03 11:28:57 +0800
+Processing by ShopsController#index as */*
+  [1m[36mShop Load (234.7ms)[0m  [1m[34mSELECT "shops".* FROM "shops"[0m
+  ↳ app/controllers/shops_controller.rb:29:in `index'
+Completed 200 OK in 495ms (Views: 260.4ms | ActiveRecord: 234.7ms | Allocations: 1275)
+
+
+Started GET "/api/shops/1" for ::1 at 2021-04-03 11:29:07 +0800
+Processing by ShopsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mShop Load (212.9ms)[0m  [1m[34mSELECT "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/shops_controller.rb:33:in `show'
+Completed 200 OK in 638ms (Views: 0.4ms | ActiveRecord: 212.9ms | Allocations: 1099)
+
+
+Started GET "/api/shops" for ::1 at 2021-04-03 11:29:20 +0800
+Processing by ShopsController#index as */*
+  [1m[36mShop Load (212.2ms)[0m  [1m[34mSELECT "shops".* FROM "shops"[0m
+  ↳ app/controllers/shops_controller.rb:29:in `index'
+Completed 200 OK in 425ms (Views: 212.5ms | ActiveRecord: 212.2ms | Allocations: 1276)
+
+
+Started GET "/api/shops/1" for ::1 at 2021-04-03 11:29:33 +0800
+Processing by ShopsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mShop Load (210.8ms)[0m  [1m[34mSELECT "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/shops_controller.rb:33:in `show'
+Completed 200 OK in 424ms (Views: 0.4ms | ActiveRecord: 210.8ms | Allocations: 999)
+
+
+Started POST "/api/orders" for ::1 at 2021-04-03 11:29:49 +0800
+  
+NoMethodError (undefined method `arity' for :shops:Symbol):
+  
+app/models/order.rb:2:in `<class:Order>'
+app/models/order.rb:1:in `<main>'
+Started GET "/api/users" for ::1 at 2021-04-03 11:30:16 +0800
+Processing by UsersController#index as */*
+  [1m[36mUser Load (215.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:29:in `index'
+Completed 200 OK in 428ms (Views: 212.6ms | ActiveRecord: 215.3ms | Allocations: 1542)
+
+
+Started GET "/api/shops" for ::1 at 2021-04-03 11:30:19 +0800
+Processing by ShopsController#index as */*
+  [1m[36mShop Load (213.8ms)[0m  [1m[34mSELECT "shops".* FROM "shops"[0m
+  ↳ app/controllers/shops_controller.rb:29:in `index'
+Completed 200 OK in 427ms (Views: 212.5ms | ActiveRecord: 213.8ms | Allocations: 1281)
+
+
+Started GET "/api/orders" for ::1 at 2021-04-03 11:30:26 +0800
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (211.6ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:29:in `index'
+Completed 200 OK in 429ms (Views: 216.9ms | ActiveRecord: 211.6ms | Allocations: 1153)
+
+
+Started GET "/api/orders/1" for ::1 at 2021-04-03 11:30:43 +0800
+Processing by OrdersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mOrder Load (211.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:33:in `show'
+Completed 404 Not Found in 1366ms (ActiveRecord: 646.2ms | Allocations: 2109)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Order with 'id'=1):
+  
+app/controllers/orders_controller.rb:33:in `show'
+Started GET "/api/orders/1" for ::1 at 2021-04-03 11:33:12 +0800
+Processing by OrdersController#show as */*
+  Parameters: {"id"=>"1"}
+Completed 400 Bad Request in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1368)
+
+
+Started POST "/api/orders" for ::1 at 2021-04-03 11:33:18 +0800
+Processing by OrdersController#create as */*
+  Parameters: {"users_id"=>2, "shops_id"=>1, "order"=>{"users_id"=>2, "shops_id"=>1}}
+  [1m[36mTRANSACTION (213.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/orders_controller.rb:7:in `create'
+  [1m[36mOrder Create (231.3ms)[0m  [1m[32mINSERT INTO "orders" ("created_at", "updated_at", "users_id", "shops_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2021-04-03 03:33:19.109775"], ["updated_at", "2021-04-03 03:33:19.109775"], ["users_id", 2], ["shops_id", 1]]
+  ↳ app/controllers/orders_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (238.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/orders_controller.rb:7:in `create'
+Completed 200 OK in 971ms (Views: 0.2ms | ActiveRecord: 1393.9ms | Allocations: 4833)
+
+
+Started GET "/api/orders" for ::1 at 2021-04-03 11:33:24 +0800
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (299.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:29:in `index'
+Completed 200 OK in 580ms (Views: 280.0ms | ActiveRecord: 299.3ms | Allocations: 1185)
+
+
+Started POST "/api/books" for ::1 at 2021-04-03 11:35:20 +0800
+Processing by BooksController#create as */*
+  Parameters: {"name"=>"book1", "author"=>"author1", "price"=>100.11, "quantity"=>200, "book"=>{"name"=>"book1", "author"=>"author1", "price"=>100.11, "quantity"=>200}}
+Completed 200 OK in 273ms (Views: 0.1ms | ActiveRecord: 476.4ms | Allocations: 7631)
+
+
+Started GET "/api/books" for ::1 at 2021-04-03 11:35:23 +0800
+Processing by BooksController#index as */*
+  [1m[36mBook Load (211.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:31:in `index'
+Completed 200 OK in 429ms (Views: 217.2ms | ActiveRecord: 211.5ms | Allocations: 1137)
+
+
+Started GET "/api/books" for ::1 at 2021-04-03 11:35:36 +0800
+Processing by BooksController#index as */*
+  [1m[36mBook Load (213.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:31:in `index'
+Completed 200 OK in 510ms (Views: 296.3ms | ActiveRecord: 213.1ms | Allocations: 1091)
+
+
+Started GET "/api/books/1" for ::1 at 2021-04-03 11:36:17 +0800
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (339.6ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:36:in `show'
+Completed 400 Bad Request in 763ms (Views: 0.2ms | ActiveRecord: 339.6ms | Allocations: 1305)
+
+
+Started POST "/api/books" for ::1 at 2021-04-03 11:36:27 +0800
+Processing by BooksController#create as */*
+  Parameters: {"name"=>"book1", "author"=>"author1", "price"=>100.11, "quantity"=>200, "book"=>{"name"=>"book1", "author"=>"author1", "price"=>100.11, "quantity"=>200}}
+Completed 200 OK in 211ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 879)
+
+
+Started POST "/api/books" for ::1 at 2021-04-03 11:36:55 +0800
+Processing by BooksController#create as */*
+  Parameters: {"name"=>"book1", "author"=>"author1", "price"=>100.11, "quantity"=>200, "book"=>{"name"=>"book1", "author"=>"author1", "price"=>100.11, "quantity"=>200}}
+Completed 200 OK in 212ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 881)
+
+
+Started POST "/api/books" for ::1 at 2021-04-03 11:37:10 +0800
+Processing by BooksController#create as */*
+  Parameters: {"name"=>"book1", "author"=>"author1", "price"=>100.11, "quantity"=>200, "book"=>{"name"=>"book1", "author"=>"author1", "price"=>100.11, "quantity"=>200}}
+Completed 200 OK in 212ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 885)
+
+
+Started GET "/api/books" for ::1 at 2021-04-03 11:37:13 +0800
+Processing by BooksController#index as */*
+  [1m[36mBook Load (211.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:31:in `index'
+Completed 200 OK in 427ms (Views: 215.2ms | ActiveRecord: 211.3ms | Allocations: 1089)
+
+
+Started POST "/api/books" for ::1 at 2021-04-03 11:37:41 +0800
+  [1m[35m (305.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#create as */*
+  Parameters: {"name"=>"book1", "author"=>"author1", "price"=>100.11, "quantity"=>200, "book"=>{"name"=>"book1", "author"=>"author1", "price"=>100.11, "quantity"=>200}}
+Completed 200 OK in 239ms (Views: 0.2ms | ActiveRecord: 731.0ms | Allocations: 7877)
+
+
+Started POST "/api/books" for ::1 at 2021-04-03 11:37:51 +0800
+Processing by BooksController#create as */*
+  Parameters: {"name"=>"book2", "author"=>"author2", "price"=>103.11, "quantity"=>200333, "book"=>{"name"=>"book2", "author"=>"author2", "price"=>103.11, "quantity"=>200333}}
+Completed 200 OK in 216ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1387)
+
+
+Started GET "/api/books" for ::1 at 2021-04-03 11:37:53 +0800
+Processing by BooksController#index as */*
+  [1m[36mBook Load (212.0ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:31:in `index'
+Completed 200 OK in 427ms (Views: 214.2ms | ActiveRecord: 212.0ms | Allocations: 1188)
+
+
+Started POST "/api/books" for ::1 at 2021-04-03 11:38:38 +0800
+  [1m[35m (305.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#create as */*
+  Parameters: {"name"=>"book1", "author"=>"author1", "price"=>100.11, "quantity"=>200, "shops_id"=>1, "book"=>{"name"=>"book1", "author"=>"author1", "price"=>100.11, "quantity"=>200, "shops_id"=>1}}
+Completed 500 Internal Server Error in 323ms (ActiveRecord: 935.3ms | Allocations: 8937)
+
+
+  
+NameError (uninitialized constant Book::Shops):
+  
+app/controllers/books_controller.rb:10:in `create'
+Started POST "/api/books" for ::1 at 2021-04-03 11:39:57 +0800
+Processing by BooksController#create as */*
+  Parameters: {"name"=>"book1", "author"=>"author1", "price"=>100.11, "quantity"=>200, "shops_id"=>1, "book"=>{"name"=>"book1", "author"=>"author1", "price"=>100.11, "quantity"=>200, "shops_id"=>1}}
+Completed 500 Internal Server Error in 220ms (ActiveRecord: 0.0ms | Allocations: 2130)
+
+
+  
+NameError (uninitialized constant Book::Shops):
+  
+app/controllers/books_controller.rb:10:in `create'
+Started POST "/api/books" for ::1 at 2021-04-03 11:40:23 +0800
+Processing by BooksController#create as */*
+  Parameters: {"name"=>"book1", "author"=>"author1", "price"=>100.11, "quantity"=>200, "shops_id"=>1, "book"=>{"name"=>"book1", "author"=>"author1", "price"=>100.11, "quantity"=>200, "shops_id"=>1}}
+Completed 500 Internal Server Error in 410ms (ActiveRecord: 1226.5ms | Allocations: 6814)
+
+
+  
+NameError (uninitialized constant Book::Shops):
+  
+app/controllers/books_controller.rb:10:in `create'
+Started POST "/api/books" for ::1 at 2021-04-03 11:40:43 +0800
+Processing by BooksController#create as */*
+  Parameters: {"name"=>"book1", "author"=>"author1", "price"=>100.11, "quantity"=>200, "shops_id"=>1, "book"=>{"name"=>"book1", "author"=>"author1", "price"=>100.11, "quantity"=>200, "shops_id"=>1}}
+Completed 200 OK in 229ms (Views: 0.3ms | ActiveRecord: 658.8ms | Allocations: 5942)
+
+
+Started POST "/api/books" for ::1 at 2021-04-03 11:42:36 +0800
+  [1m[35m (227.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#create as */*
+  Parameters: {"name"=>"book1", "author"=>"author1", "price"=>100.11, "quantity"=>200, "shops_id"=>1, "book"=>{"name"=>"book1", "author"=>"author1", "price"=>100.11, "quantity"=>200, "shops_id"=>1}}
+  [1m[36mTRANSACTION (303.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:10:in `create'
+  [1m[36mBook Create (304.4ms)[0m  [1m[32mINSERT INTO "books" ("name", "author", "price", "quantity", "created_at", "updated_at", "shops_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "book1"], ["author", "author1"], ["price", 100.11], ["quantity", 200], ["created_at", "2021-04-03 03:42:43.146204"], ["updated_at", "2021-04-03 03:42:43.146204"], ["shops_id", 1]]
+  ↳ app/controllers/books_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (299.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:10:in `create'
+Completed 200 OK in 1222ms (Views: 0.3ms | ActiveRecord: 1703.8ms | Allocations: 7732)
+
+
+Started POST "/api/books" for ::1 at 2021-04-03 11:43:36 +0800
+Processing by BooksController#create as */*
+  Parameters: {"name"=>"book2", "author"=>"author2", "price"=>10330.11, "quantity"=>233300, "shops_id"=>1, "book"=>{"name"=>"book2", "author"=>"author2", "price"=>10330.11, "quantity"=>233300, "shops_id"=>1}}
+  [1m[36mTRANSACTION (211.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:10:in `create'
+  [1m[36mBook Create (212.3ms)[0m  [1m[32mINSERT INTO "books" ("name", "author", "price", "quantity", "created_at", "updated_at", "shops_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "book2"], ["author", "author2"], ["price", 10330.11], ["quantity", 233300], ["created_at", "2021-04-03 03:43:36.694962"], ["updated_at", "2021-04-03 03:43:36.694962"], ["shops_id", 1]]
+  ↳ app/controllers/books_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (216.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:10:in `create'
+Completed 200 OK in 862ms (Views: 0.3ms | ActiveRecord: 640.5ms | Allocations: 3069)
+
+
+Started POST "/api/books" for ::1 at 2021-04-03 11:43:44 +0800
+Processing by BooksController#create as */*
+  Parameters: {"name"=>"book3", "author"=>"author3", "price"=>11.11, "quantity"=>3, "shops_id"=>2, "book"=>{"name"=>"book3", "author"=>"author3", "price"=>11.11, "quantity"=>3, "shops_id"=>2}}
+  [1m[36mTRANSACTION (211.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:10:in `create'
+  [1m[36mBook Create (651.6ms)[0m  [1m[32mINSERT INTO "books" ("name", "author", "price", "quantity", "created_at", "updated_at", "shops_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "book3"], ["author", "author3"], ["price", 11.11], ["quantity", 3], ["created_at", "2021-04-03 03:43:44.229593"], ["updated_at", "2021-04-03 03:43:44.229593"], ["shops_id", 2]]
+  ↳ app/controllers/books_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (233.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:10:in `create'
+Completed 200 OK in 1316ms (Views: 0.2ms | ActiveRecord: 1095.8ms | Allocations: 2557)
+
+
+Started GET "/api/books" for ::1 at 2021-04-03 11:44:07 +0800
+Processing by BooksController#index as */*
+  [1m[36mBook Load (299.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:32:in `index'
+Completed 200 OK in 522ms (Views: 222.1ms | ActiveRecord: 299.6ms | Allocations: 1537)
+
+
+Started PUT "/api/shops/1" for ::1 at 2021-04-03 12:17:54 +0800
+  [1m[35m (405.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ShopsController#update as */*
+  Parameters: {"name"=>"shop-update", "address"=>"kowloon", "id"=>"1", "shop"=>{"name"=>"shop-update", "address"=>"kowloon"}}
+  [1m[36mShop Load (211.3ms)[0m  [1m[34mSELECT "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/shops_controller.rb:53:in `update'
+  [1m[36mTRANSACTION (212.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/shops_controller.rb:59:in `update'
+  [1m[36mShop Update (211.3ms)[0m  [1m[33mUPDATE "shops" SET "name" = $1, "address" = $2, "updated_at" = $3 WHERE "shops"."id" = $4[0m  [["name", "shop-update"], ["address", "kowloon"], ["updated_at", "2021-04-03 04:18:02.890380"], ["id", 1]]
+  ↳ app/controllers/shops_controller.rb:59:in `update'
+  [1m[36mTRANSACTION (212.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/shops_controller.rb:59:in `update'
+Completed 200 OK in 1518ms (Views: 1.8ms | ActiveRecord: 1892.7ms | Allocations: 7523)
+
+
+Started GET "/api/shops" for ::1 at 2021-04-03 12:18:32 +0800
+Processing by ShopsController#index as */*
+  [1m[36mShop Load (212.1ms)[0m  [1m[34mSELECT "shops".* FROM "shops"[0m
+  ↳ app/controllers/shops_controller.rb:29:in `index'
+Completed 200 OK in 1081ms (Views: 216.9ms | ActiveRecord: 862.3ms | Allocations: 5258)
+
+
+Started DELETE "/api/shops/1" for ::1 at 2021-04-03 12:18:53 +0800
+Processing by ShopsController#destroy as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mShop Load (211.0ms)[0m  [1m[34mSELECT "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/shops_controller.rb:78:in `destroy'
+  [1m[36mTRANSACTION (210.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/shops_controller.rb:81:in `destroy'
+  [1m[36mShop Destroy (213.5ms)[0m  [1m[31mDELETE FROM "shops" WHERE "shops"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/shops_controller.rb:81:in `destroy'
+  [1m[36mTRANSACTION (211.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/shops_controller.rb:81:in `destroy'
+Completed 200 OK in 1063ms (Views: 0.4ms | ActiveRecord: 846.5ms | Allocations: 2833)
+
+
+Started GET "/api/shops" for ::1 at 2021-04-03 12:18:56 +0800
+Processing by ShopsController#index as */*
+  [1m[36mShop Load (212.1ms)[0m  [1m[34mSELECT "shops".* FROM "shops"[0m
+  ↳ app/controllers/shops_controller.rb:29:in `index'
+Completed 200 OK in 427ms (Views: 214.8ms | ActiveRecord: 212.1ms | Allocations: 1195)
+
+
+Started PUT "/api/books/1" for ::1 at 2021-04-03 12:19:38 +0800
+Processing by BooksController#update as */*
+  Parameters: {"name"=>"book1-update", "author"=>"author1-update", "price"=>999.99, "quantity"=>900, "shops_id"=>2, "id"=>"1", "book"=>{"name"=>"book1-update", "author"=>"author1-update", "price"=>999.99, "quantity"=>900, "shops_id"=>2}}
+  [1m[36mBook Load (212.7ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:56:in `update'
+  [1m[36mTRANSACTION (500.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:65:in `update'
+  [1m[36mBook Update (211.2ms)[0m  [1m[33mUPDATE "books" SET "name" = $1, "author" = $2, "price" = $3, "quantity" = $4, "updated_at" = $5, "shops_id" = $6 WHERE "books"."id" = $7[0m  [["name", "book1-update"], ["author", "author1-update"], ["price", 999.99], ["quantity", 900], ["updated_at", "2021-04-03 04:19:40.175197"], ["shops_id", 2], ["id", 1]]
+  ↳ app/controllers/books_controller.rb:65:in `update'
+  [1m[36mTRANSACTION (252.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:65:in `update'
+Completed 200 OK in 2055ms (Views: 0.3ms | ActiveRecord: 1603.0ms | Allocations: 7075)
+
+
+Started DELETE "/api/books/1" for ::1 at 2021-04-03 12:20:13 +0800
+Processing by BooksController#destroy as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (211.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:84:in `destroy'
+  [1m[36mTRANSACTION (211.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:87:in `destroy'
+  [1m[36mBook Destroy (243.8ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/books_controller.rb:87:in `destroy'
+  [1m[36mTRANSACTION (586.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:87:in `destroy'
+Completed 200 OK in 1470ms (Views: 0.1ms | ActiveRecord: 1252.4ms | Allocations: 2709)
+
+
+Started DELETE "/api/books/1" for ::1 at 2021-04-03 12:20:17 +0800
+Processing by BooksController#destroy as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (216.6ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:84:in `destroy'
+Completed 400 Bad Request in 430ms (Views: 0.2ms | ActiveRecord: 216.6ms | Allocations: 1239)
+
+
+Started PUT "/api/books/1" for ::1 at 2021-04-03 12:20:19 +0800
+Processing by BooksController#update as */*
+  Parameters: {"name"=>"book1-update", "author"=>"author1-update", "price"=>999.99, "quantity"=>900, "shops_id"=>2, "id"=>"1", "book"=>{"name"=>"book1-update", "author"=>"author1-update", "price"=>999.99, "quantity"=>900, "shops_id"=>2}}
+  [1m[36mBook Load (215.7ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:56:in `update'
+Completed 400 Bad Request in 428ms (Views: 0.2ms | ActiveRecord: 215.7ms | Allocations: 1220)
+
+
+Started GET "/api/books" for ::1 at 2021-04-03 12:20:22 +0800
+Processing by BooksController#index as */*
+  [1m[36mBook Load (211.0ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:32:in `index'
+Completed 200 OK in 424ms (Views: 212.6ms | ActiveRecord: 211.0ms | Allocations: 1327)
+
+
+Started GET "/api/users" for ::1 at 2021-04-03 12:25:58 +0800
+  [1m[35m (410.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as */*
+  [1m[36mUser Load (274.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:29:in `index'
+Completed 200 OK in 1099ms (Views: 8.1ms | ActiveRecord: 1077.5ms | Allocations: 7216)
+
+
+Started PUT "/api/users/change-password/1" for ::1 at 2021-04-03 12:26:21 +0800
+Processing by UsersController#change_password as */*
+  Parameters: {"old_password"=>"[FILTERED]", "new_password"=>"[FILTERED]", "id"=>"1", "user"=>{}}
+  [1m[36mUser Load (211.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:53:in `change_password'
+  [1m[36mTRANSACTION (211.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:61:in `change_password'
+  [1m[36mUser Update (211.2ms)[0m  [1m[33mUPDATE "users" SET "password" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["password", "t"], ["updated_at", "2021-04-03 04:26:24.101308"], ["id", 1]]
+  ↳ app/controllers/users_controller.rb:61:in `change_password'
+  [1m[36mTRANSACTION (280.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:61:in `change_password'
+Completed 200 OK in 2045ms (Views: 0.2ms | ActiveRecord: 2345.5ms | Allocations: 6171)
+
+
+Started PUT "/api/users/change-password/1" for ::1 at 2021-04-03 12:26:49 +0800
+  
+ActionController::RoutingError (No route matches [PUT] "/api/users/change-password/1"):
+  
+Started PUT "/api/users/change-password/1" for ::1 at 2021-04-03 12:26:54 +0800
+Processing by UsersController#change_password as */*
+  Parameters: {"old_password"=>"[FILTERED]", "new_password"=>"[FILTERED]", "id"=>"1", "user"=>{}}
+  [1m[36mUser Load (858.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:53:in `change_password'
+Completed 400 Bad Request in 1079ms (Views: 0.2ms | ActiveRecord: 1816.9ms | Allocations: 3399)
+
+
+Started GET "/api/users" for ::1 at 2021-04-03 12:27:17 +0800
+Processing by UsersController#index as */*
+  [1m[36mUser Load (212.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:29:in `index'
+Completed 200 OK in 1561ms (Views: 226.0ms | ActiveRecord: 1333.4ms | Allocations: 5418)
+
+
+Started PUT "/api/users/change-password/1" for ::1 at 2021-04-03 12:28:32 +0800
+Processing by UsersController#change_password as */*
+  Parameters: {"old_password"=>"[FILTERED]", "new_password"=>"[FILTERED]", "id"=>"1", "user"=>{}}
+  [1m[36mUser Load (213.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:53:in `change_password'
+Completed 400 Bad Request in 434ms (Views: 0.2ms | ActiveRecord: 856.2ms | Allocations: 3225)
+
+
+Started GET "/api/users" for ::1 at 2021-04-03 12:28:36 +0800
+Processing by UsersController#index as */*
+  [1m[36mUser Load (214.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:29:in `index'
+Completed 200 OK in 433ms (Views: 218.4ms | ActiveRecord: 214.3ms | Allocations: 1378)
+
+
+Started GET "/api/users" for ::1 at 2021-04-03 12:28:37 +0800
+Processing by UsersController#index as */*
+  [1m[36mUser Load (211.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:29:in `index'
+Completed 200 OK in 428ms (Views: 215.8ms | ActiveRecord: 211.9ms | Allocations: 1372)
+
+
+Started GET "/api/users" for ::1 at 2021-04-03 12:28:41 +0800
+Processing by UsersController#index as */*
+  [1m[36mUser Load (213.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:29:in `index'
+Completed 200 OK in 427ms (Views: 213.3ms | ActiveRecord: 213.6ms | Allocations: 1389)
+
+
+Started GET "/api/users" for ::1 at 2021-04-03 12:29:20 +0800
+Processing by UsersController#index as */*
+  [1m[36mUser Load (311.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:29:in `index'
+Completed 200 OK in 1884ms (Views: 429.1ms | ActiveRecord: 1442.5ms | Allocations: 5375)
+
+
+Started GET "/api/shops" for ::1 at 2021-04-03 12:29:24 +0800
+Processing by ShopsController#index as */*
+  [1m[36mShop Load (211.2ms)[0m  [1m[34mSELECT "shops".* FROM "shops"[0m
+  ↳ app/controllers/shops_controller.rb:29:in `index'
+Completed 200 OK in 858ms (Views: 217.7ms | ActiveRecord: 638.2ms | Allocations: 4912)
+
+
+Started POST "/api/users/signup" for ::1 at 2021-04-03 12:31:59 +0800
+Processing by UsersController#signup as */*
+  Parameters: {"email"=>"test5@test.com", "password"=>"[FILTERED]", "user"=>{"email"=>"test5@test.com", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (211.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:7:in `signup'
+  [1m[36mUser Create (212.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "test5@test.com"], ["password", "test5"], ["created_at", "2021-04-03 04:32:00.402386"], ["updated_at", "2021-04-03 04:32:00.402386"]]
+  ↳ app/controllers/users_controller.rb:7:in `signup'
+  [1m[36mTRANSACTION (213.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:7:in `signup'
+Completed 200 OK in 860ms (Views: 0.2ms | ActiveRecord: 1450.1ms | Allocations: 4886)
+
+
+Started POST "/api/users/login" for ::1 at 2021-04-03 12:32:04 +0800
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"test3@test.com", "password"=>"[FILTERED]", "user"=>{"email"=>"test3@test.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (248.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 /* loading for inspect */ LIMIT $2[0m  [["email", "test3@test.com"], ["LIMIT", 11]]
+Completed 500 Internal Server Error in 686ms (ActiveRecord: 0.0ms | Allocations: 2993)
+
+
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 /* loading for inspect */ LIMIT $2[0m  [["email", "test3@test.com"], ["LIMIT", 11]]
+  
+NoMethodError (undefined method `password' for #<User::ActiveRecord_Relation:0x00007f9e43d39cd8>):
+  
+app/controllers/users_controller.rb:30:in `login'
+Started POST "/api/users/login" for ::1 at 2021-04-03 12:32:45 +0800
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"test3@test.com", "password"=>"[FILTERED]", "user"=>{"email"=>"test3@test.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (216.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 /* loading for inspect */ LIMIT $2[0m  [["email", "test3@test.com"], ["LIMIT", 11]]
+Completed 500 Internal Server Error in 444ms (ActiveRecord: 787.6ms | Allocations: 5173)
+
+
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 /* loading for inspect */ LIMIT $2[0m  [["email", "test3@test.com"], ["LIMIT", 11]]
+  
+NoMethodError (undefined method `password' for #<User::ActiveRecord_Relation:0x00007f9e47d0bcf8>):
+  
+app/controllers/users_controller.rb:30:in `login'
+Started POST "/api/users/login" for ::1 at 2021-04-03 12:33:42 +0800
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"test3@test.com", "password"=>"[FILTERED]", "user"=>{"email"=>"test3@test.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1112.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 /* loading for inspect */ LIMIT $2[0m  [["email", "test3@test.com"], ["LIMIT", 11]]
+Completed 500 Internal Server Error in 1528ms (ActiveRecord: 825.8ms | Allocations: 5167)
+
+
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 /* loading for inspect */ LIMIT $2[0m  [["email", "test3@test.com"], ["LIMIT", 11]]
+  
+NoMethodError (undefined method `password' for #<User::ActiveRecord_Relation:0x00007f9e46acfbe8>):
+  
+app/controllers/users_controller.rb:30:in `login'
+Started POST "/api/users/login" for ::1 at 2021-04-03 12:34:02 +0800
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"test3@test.com", "password"=>"[FILTERED]", "user"=>{"email"=>"test3@test.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (937.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1[0m  [["email", "test3@test.com"]]
+  ↳ app/controllers/users_controller.rb:30:in `login'
+Completed 500 Internal Server Error in 1372ms (ActiveRecord: 1582.3ms | Allocations: 3579)
+
+
+  
+TypeError (no implicit conversion of String into Integer):
+  
+app/controllers/users_controller.rb:30:in `login'
+Started POST "/api/users/login" for ::1 at 2021-04-03 12:34:20 +0800
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"test3@test.com", "password"=>"[FILTERED]", "user"=>{"email"=>"test3@test.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (212.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 /* loading for inspect */ LIMIT $2[0m  [["email", "test3@test.com"], ["LIMIT", 11]]
+Completed 500 Internal Server Error in 518ms (ActiveRecord: 428.4ms | Allocations: 5160)
+
+
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 /* loading for inspect */ LIMIT $2[0m  [["email", "test3@test.com"], ["LIMIT", 11]]
+  
+NoMethodError (undefined method `password' for #<User::ActiveRecord_Relation:0x00007f9e46e17710>):
+  
+app/controllers/users_controller.rb:30:in `login'
+Started POST "/api/users/login" for ::1 at 2021-04-03 12:35:15 +0800
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"test3@test.com", "password"=>"[FILTERED]", "user"=>{"email"=>"test3@test.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (507.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 /* loading for inspect */ LIMIT $2[0m  [["email", "test3@test.com"], ["LIMIT", 11]]
+Completed 500 Internal Server Error in 731ms (ActiveRecord: 924.2ms | Allocations: 5169)
+
+
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 /* loading for inspect */ LIMIT $2[0m  [["email", "test3@test.com"], ["LIMIT", 11]]
+  
+NoMethodError (undefined method `password' for #<User::ActiveRecord_Relation:0x00007f9e46c6a570>):
+  
+app/controllers/users_controller.rb:31:in `login'
+Started POST "/api/users/login" for ::1 at 2021-04-03 12:36:24 +0800
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"test3@test.com", "password"=>"[FILTERED]", "user"=>{"email"=>"test3@test.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (217.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 /* loading for inspect */ LIMIT $2[0m  [["email", "test3@test.com"], ["LIMIT", 11]]
+Completed 500 Internal Server Error in 715ms (ActiveRecord: 722.7ms | Allocations: 5164)
+
+
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 /* loading for inspect */ LIMIT $2[0m  [["email", "test3@test.com"], ["LIMIT", 11]]
+  
+NoMethodError (undefined method `password' for #<User::ActiveRecord_Relation:0x00007f9e47348bf8>):
+  
+app/controllers/users_controller.rb:27:in `login'
+Started POST "/api/users/login" for ::1 at 2021-04-03 12:36:58 +0800
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"test3@test.com", "password"=>"[FILTERED]", "user"=>{"email"=>"test3@test.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (720.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test3@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+Completed 200 OK in 1334ms (Views: 0.2ms | ActiveRecord: 1841.6ms | Allocations: 3302)
+
+
+Started POST "/api/users/login" for ::1 at 2021-04-03 12:37:12 +0800
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"test3@test.com", "password"=>"[FILTERED]", "user"=>{"email"=>"test3@test.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (213.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test3@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+Completed 200 OK in 536ms (Views: 0.2ms | ActiveRecord: 1227.4ms | Allocations: 3287)
+
+
+Started POST "/api/users/signup" for ::1 at 2021-04-03 12:37:34 +0800
+Processing by UsersController#signup as */*
+  Parameters: {"email"=>"test6@test.com", "password"=>"[FILTERED]", "user"=>{"email"=>"test6@test.com", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (211.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:7:in `signup'
+  [1m[36mUser Create (230.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "test6@test.com"], ["password", "test6"], ["created_at", "2021-04-03 04:37:34.888374"], ["updated_at", "2021-04-03 04:37:34.888374"]]
+  ↳ app/controllers/users_controller.rb:7:in `signup'
+  [1m[36mTRANSACTION (307.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:7:in `signup'
+Completed 200 OK in 964ms (Views: 0.2ms | ActiveRecord: 749.6ms | Allocations: 2562)
+
+
+Started POST "/api/users/login" for ::1 at 2021-04-03 12:37:41 +0800
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"test6@test.com", "password"=>"[FILTERED]", "user"=>{"email"=>"test6@test.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (211.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test6@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+Completed 200 OK in 425ms (Views: 0.2ms | ActiveRecord: 211.8ms | Allocations: 928)
+
+
+Started GET "/api/users" for ::1 at 2021-04-03 12:37:46 +0800
+Processing by UsersController#index as */*
+  [1m[36mUser Load (215.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:57:in `index'
+Completed 200 OK in 437ms (Views: 221.6ms | ActiveRecord: 215.0ms | Allocations: 1570)
+
+
+Started GET "/api/users/1" for ::1 at 2021-04-03 12:37:48 +0800
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (210.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:62:in `show'
+Completed 200 OK in 424ms (Views: 0.4ms | ActiveRecord: 210.8ms | Allocations: 1092)
+
+
+Started PUT "/api/users/change-password/1" for ::1 at 2021-04-03 12:37:54 +0800
+Processing by UsersController#change_password as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (327.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:81:in `change_password'
+Completed 400 Bad Request in 552ms (Views: 0.1ms | ActiveRecord: 327.4ms | Allocations: 1232)
+
+
+Started POST "/api/users/login" for ::1 at 2021-04-03 12:38:03 +0800
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"test3@test.com", "password"=>"[FILTERED]", "user"=>{"email"=>"test3@test.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (211.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test3@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+Completed 400 Bad Request in 424ms (Views: 0.2ms | ActiveRecord: 211.0ms | Allocations: 911)
+
+
+Started POST "/api/users/login" for ::1 at 2021-04-03 12:46:58 +0800
+  [1m[35m (274.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"test3@test.com", "password"=>"[FILTERED]", "user"=>{"email"=>"test3@test.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (211.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test3@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `login'
+Completed 200 OK in 869ms (Views: 0.2ms | ActiveRecord: 1058.9ms | Allocations: 5031)
+
+
+Started GET "/api/users" for ::1 at 2021-04-03 12:47:08 +0800
+Processing by UsersController#index as */*
+  [1m[36mUser Load (214.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:57:in `index'
+Completed 200 OK in 431ms (Views: 215.7ms | ActiveRecord: 214.0ms | Allocations: 2156)
+
+
+Started GET "/api/shops" for ::1 at 2021-04-03 12:47:10 +0800
+Processing by ShopsController#index as */*
+  [1m[36mShop Load (212.3ms)[0m  [1m[34mSELECT "shops".* FROM "shops"[0m
+  ↳ app/controllers/shops_controller.rb:29:in `index'
+Completed 200 OK in 1144ms (Views: 226.8ms | ActiveRecord: 910.4ms | Allocations: 4974)
+
+
+Started POST "/api/users/signup" for ::1 at 2021-04-03 13:02:09 +0800
+  [1m[35m (305.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#signup as */*
+  Parameters: {"email"=>"test@test.com", "password"=>"[FILTERED]", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (403.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `signup'
+  [1m[36mUser Create (303.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "test@test.com"], ["password", "$2a$12$dZAh7R.v01/d4TTsGpq.genqoTyrQ9Jfyzk/zZLYFP2RuyO0QSw4O"], ["created_at", "2021-04-03 05:02:16.559787"], ["updated_at", "2021-04-03 05:02:16.559787"]]
+  ↳ app/controllers/users_controller.rb:13:in `signup'
+  [1m[36mTRANSACTION (211.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `signup'
+Completed 200 OK in 1643ms (Views: 0.3ms | ActiveRecord: 2143.0ms | Allocations: 6254)
+
+
+Started POST "/api/users/signup" for ::1 at 2021-04-03 13:02:27 +0800
+Processing by UsersController#signup as */*
+  Parameters: {"email"=>"test2@test.com", "password"=>"[FILTERED]", "user"=>{"email"=>"test2@test.com", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (211.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13:in `signup'
+  [1m[36mUser Create (250.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "test2@test.com"], ["password", "$2a$12$uncHoS0DjqYm.RWayEYJ0uT3Bw88ZhbUZgplvTM92T6a8t6JGynkq"], ["created_at", "2021-04-03 05:02:27.659655"], ["updated_at", "2021-04-03 05:02:27.659655"]]
+  ↳ app/controllers/users_controller.rb:13:in `signup'
+  [1m[36mTRANSACTION (212.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13:in `signup'
+Completed 200 OK in 1097ms (Views: 1.0ms | ActiveRecord: 674.0ms | Allocations: 3085)
+
+
+Started POST "/api/users/login" for ::1 at 2021-04-03 13:02:29 +0800
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"test@test.com", "password"=>"[FILTERED]", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (212.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:33:in `login'
+Completed 200 OK in 1370ms (Views: 0.1ms | ActiveRecord: 424.8ms | Allocations: 1673)
+
+
+Started GET "/api/users" for ::1 at 2021-04-03 13:02:38 +0800
+Processing by UsersController#index as */*
+  [1m[36mUser Load (212.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:70:in `index'
+Completed 200 OK in 428ms (Views: 215.1ms | ActiveRecord: 212.6ms | Allocations: 1311)
+
+
+Started GET "/api/users" for ::1 at 2021-04-03 13:07:13 +0800
+  [1m[35m (593.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as */*
+  [1m[36mUser Load (221.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:70:in `index'
+Completed 200 OK in 892ms (Views: 14.7ms | ActiveRecord: 862.1ms | Allocations: 7116)
+
+
+Started POST "/api/shops" for ::1 at 2021-04-03 13:07:29 +0800
+Processing by ShopsController#create as */*
+  Parameters: {"name"=>"shop", "address"=>"hongkong", "shop"=>{"name"=>"shop", "address"=>"hongkong"}}
+  [1m[36mTRANSACTION (329.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/shops_controller.rb:7:in `create'
+  [1m[36mShop Create (483.8ms)[0m  [1m[32mINSERT INTO "shops" ("name", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "shop"], ["address", "hongkong"], ["created_at", "2021-04-03 05:07:30.316832"], ["updated_at", "2021-04-03 05:07:30.316832"]]
+  ↳ app/controllers/shops_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (300.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/shops_controller.rb:7:in `create'
+Completed 200 OK in 1380ms (Views: 0.2ms | ActiveRecord: 1580.7ms | Allocations: 5000)
+
+
+Started POST "/api/shops" for ::1 at 2021-04-03 13:07:35 +0800
+Processing by ShopsController#create as */*
+  Parameters: {"name"=>"shop2", "address"=>"kowloon", "shop"=>{"name"=>"shop2", "address"=>"kowloon"}}
+  [1m[36mTRANSACTION (211.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/shops_controller.rb:7:in `create'
+  [1m[36mShop Create (267.5ms)[0m  [1m[32mINSERT INTO "shops" ("name", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "shop2"], ["address", "kowloon"], ["created_at", "2021-04-03 05:07:35.254649"], ["updated_at", "2021-04-03 05:07:35.254649"]]
+  ↳ app/controllers/shops_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (214.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/shops_controller.rb:7:in `create'
+Completed 200 OK in 925ms (Views: 1.6ms | ActiveRecord: 693.0ms | Allocations: 2505)
+
+
+Started GET "/api/shops" for ::1 at 2021-04-03 13:07:37 +0800
+Processing by ShopsController#index as */*
+  [1m[36mShop Load (211.4ms)[0m  [1m[34mSELECT "shops".* FROM "shops"[0m
+  ↳ app/controllers/shops_controller.rb:29:in `index'
+Completed 200 OK in 425ms (Views: 213.5ms | ActiveRecord: 211.4ms | Allocations: 1310)
+
+
+Started POST "/api/books" for ::1 at 2021-04-03 13:07:44 +0800
+Processing by BooksController#create as */*
+  Parameters: {"name"=>"book1", "author"=>"author1", "price"=>100.11, "quantity"=>200, "shops_id"=>1, "book"=>{"name"=>"book1", "author"=>"author1", "price"=>100.11, "quantity"=>200, "shops_id"=>1}}
+  [1m[36mTRANSACTION (234.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:10:in `create'
+  [1m[36mBook Create (260.8ms)[0m  [1m[32mINSERT INTO "books" ("name", "author", "price", "quantity", "created_at", "updated_at", "shops_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "book1"], ["author", "author1"], ["price", 100.11], ["quantity", 200], ["created_at", "2021-04-03 05:07:45.276460"], ["updated_at", "2021-04-03 05:07:45.276460"], ["shops_id", 1]]
+  ↳ app/controllers/books_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (225.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:10:in `create'
+Completed 200 OK in 1278ms (Views: 0.2ms | ActiveRecord: 1474.2ms | Allocations: 6290)
+
+
+Started POST "/api/books" for ::1 at 2021-04-03 13:07:52 +0800
+Processing by BooksController#create as */*
+  Parameters: {"name"=>"book2", "author"=>"author2", "price"=>300.11, "quantity"=>300, "shops_id"=>2, "book"=>{"name"=>"book2", "author"=>"author2", "price"=>300.11, "quantity"=>300, "shops_id"=>2}}
+  [1m[36mTRANSACTION (212.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:10:in `create'
+  [1m[36mBook Create (215.2ms)[0m  [1m[32mINSERT INTO "books" ("name", "author", "price", "quantity", "created_at", "updated_at", "shops_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "book2"], ["author", "author2"], ["price", 300.11], ["quantity", 300], ["created_at", "2021-04-03 05:07:52.541904"], ["updated_at", "2021-04-03 05:07:52.541904"], ["shops_id", 2]]
+  ↳ app/controllers/books_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (223.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:10:in `create'
+Completed 200 OK in 866ms (Views: 0.2ms | ActiveRecord: 650.8ms | Allocations: 2541)
+
+
+Started POST "/api/books" for ::1 at 2021-04-03 13:08:03 +0800
+Processing by BooksController#create as */*
+  Parameters: {"name"=>"book3", "author"=>"author3", "price"=>30555.11, "quantity"=>350, "shops_id"=>1, "book"=>{"name"=>"book3", "author"=>"author3", "price"=>30555.11, "quantity"=>350, "shops_id"=>1}}
+  [1m[36mTRANSACTION (211.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:10:in `create'
+  [1m[36mBook Create (296.4ms)[0m  [1m[32mINSERT INTO "books" ("name", "author", "price", "quantity", "created_at", "updated_at", "shops_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "book3"], ["author", "author3"], ["price", 30555.11], ["quantity", 350], ["created_at", "2021-04-03 05:08:03.285960"], ["updated_at", "2021-04-03 05:08:03.285960"], ["shops_id", 1]]
+  ↳ app/controllers/books_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (594.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:10:in `create'
+Completed 200 OK in 1317ms (Views: 0.2ms | ActiveRecord: 1102.3ms | Allocations: 2540)
+
+
+Started GET "/api/books" for ::1 at 2021-04-03 13:08:05 +0800
+Processing by BooksController#index as */*
+  [1m[36mBook Load (211.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:32:in `index'
+Completed 200 OK in 424ms (Views: 212.1ms | ActiveRecord: 211.3ms | Allocations: 1483)
+
+
+Started GET "/api/books/1" for ::1 at 2021-04-03 13:08:12 +0800
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (719.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:37:in `show'
+Completed 200 OK in 1844ms (Views: 0.4ms | ActiveRecord: 1210.5ms | Allocations: 3647)
+
+
+Started GET "/api/shops/1" for ::1 at 2021-04-03 13:08:16 +0800
+Processing by ShopsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mShop Load (652.1ms)[0m  [1m[34mSELECT "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/shops_controller.rb:34:in `show'
+Completed 200 OK in 1086ms (Views: 0.4ms | ActiveRecord: 652.1ms | Allocations: 1103)
+
+
+Started GET "/api/orders/1" for ::1 at 2021-04-03 13:08:23 +0800
+Processing by OrdersController#show as */*
+  Parameters: {"id"=>"1"}
+Completed 400 Bad Request in 5ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1519)
+
+
+Started GET "/api/orders" for ::1 at 2021-04-03 13:08:28 +0800
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (212.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:29:in `index'
+Completed 200 OK in 425ms (Views: 211.8ms | ActiveRecord: 212.3ms | Allocations: 1133)
+
+
+Started POST "/api/orders" for ::1 at 2021-04-03 13:08:37 +0800
+Processing by OrdersController#create as */*
+  Parameters: {"users_id"=>1, "shops_id"=>1, "order"=>{"users_id"=>1, "shops_id"=>1}}
+  [1m[36mTRANSACTION (211.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/orders_controller.rb:7:in `create'
+  [1m[36mOrder Create (257.6ms)[0m  [1m[32mINSERT INTO "orders" ("created_at", "updated_at", "users_id", "shops_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2021-04-03 05:08:38.345626"], ["updated_at", "2021-04-03 05:08:38.345626"], ["users_id", 1], ["shops_id", 1]]
+  ↳ app/controllers/orders_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (305.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/orders_controller.rb:7:in `create'
+Completed 200 OK in 1402ms (Views: 0.2ms | ActiveRecord: 1611.6ms | Allocations: 4651)
+
+
+Started POST "/api/orders" for ::1 at 2021-04-03 13:08:41 +0800
+Processing by OrdersController#create as */*
+  Parameters: {"users_id"=>1, "shops_id"=>2, "order"=>{"users_id"=>1, "shops_id"=>2}}
+  [1m[36mTRANSACTION (210.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/orders_controller.rb:7:in `create'
+  [1m[36mOrder Create (211.0ms)[0m  [1m[32mINSERT INTO "orders" ("created_at", "updated_at", "users_id", "shops_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2021-04-03 05:08:41.502202"], ["updated_at", "2021-04-03 05:08:41.502202"], ["users_id", 1], ["shops_id", 2]]
+  ↳ app/controllers/orders_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (474.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/orders_controller.rb:7:in `create'
+Completed 200 OK in 1111ms (Views: 0.3ms | ActiveRecord: 895.6ms | Allocations: 2422)
+
+
+Started POST "/api/orders" for ::1 at 2021-04-03 13:08:45 +0800
+Processing by OrdersController#create as */*
+  Parameters: {"users_id"=>2, "shops_id"=>1, "order"=>{"users_id"=>2, "shops_id"=>1}}
+  [1m[36mTRANSACTION (210.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/orders_controller.rb:7:in `create'
+  [1m[36mOrder Create (211.7ms)[0m  [1m[32mINSERT INTO "orders" ("created_at", "updated_at", "users_id", "shops_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2021-04-03 05:08:45.528908"], ["updated_at", "2021-04-03 05:08:45.528908"], ["users_id", 2], ["shops_id", 1]]
+  ↳ app/controllers/orders_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (214.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/orders_controller.rb:7:in `create'
+Completed 200 OK in 855ms (Views: 0.3ms | ActiveRecord: 636.5ms | Allocations: 2418)
+
+
+Started GET "/api/orders/1" for ::1 at 2021-04-03 13:08:48 +0800
+Processing by OrdersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mOrder Load (215.9ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:34:in `show'
+Completed 200 OK in 645ms (Views: 0.5ms | ActiveRecord: 215.9ms | Allocations: 1095)
+
+
+Started GET "/api/orders" for ::1 at 2021-04-03 13:08:51 +0800
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (211.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:29:in `index'
+Completed 200 OK in 424ms (Views: 212.7ms | ActiveRecord: 211.3ms | Allocations: 1331)
+
+
+Started POST "/api/users/signup" for ::1 at 2021-04-03 13:17:12 +0800
+  [1m[35m (305.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/donaldwu/Documents/GitHub/ecommerce-api/app/helpers/users_helper.rb:17: syntax error, unexpected '=', expecting end
+        return = token
+               ^):
+  
+app/helpers/users_helper.rb:17: syntax error, unexpected '=', expecting end
+app/helpers/users_helper.rb:17: syntax error, unexpected '=', expecting end
+app/helpers/users_helper.rb:17: syntax error, unexpected '=', expecting end
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/users_controller.rb:3:in `<main>'
+Started POST "/api/users/signup" for ::1 at 2021-04-03 13:17:31 +0800
+Processing by UsersController#signup as */*
+  Parameters: {"email"=>"test3@test.com", "password"=>"[FILTERED]", "user"=>{"email"=>"test3@test.com", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 1558.7ms | Allocations: 4793)
+
+
+  
+NoMethodError (undefined method `retrieve_hash_password' for UsersHelper:Module):
+  
+app/controllers/users_controller.rb:9:in `signup'
+Started POST "/api/users/signup" for ::1 at 2021-04-03 13:18:40 +0800
+Processing by UsersController#signup as */*
+  Parameters: {"email"=>"test3@test.com", "password"=>"[FILTERED]", "user"=>{"email"=>"test3@test.com", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 507.6ms | Allocations: 1129)
+
+
+  
+NoMethodError (undefined method `retrieve_hash_password' for UsersHelper:Module):
+  
+app/controllers/users_controller.rb:11:in `signup'
+Started POST "/api/users/signup" for ::1 at 2021-04-03 13:18:53 +0800
+Processing by UsersController#signup as */*
+  Parameters: {"email"=>"test3@test.com", "password"=>"[FILTERED]", "user"=>{"email"=>"test3@test.com", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 818.1ms | Allocations: 1585)
+
+
+  
+NameError (undefined local variable or method `password' for UsersHelper:Module):
+  
+app/helpers/users_helper.rb:7:in `retrieve_hash_password'
+app/controllers/users_controller.rb:11:in `signup'
+Started POST "/api/users/signup" for ::1 at 2021-04-03 13:20:00 +0800
+  
+TypeError (superclass must be a Class (Module given)):
+  
+app/helpers/users_helper.rb:5:in `<main>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/users_controller.rb:3:in `<main>'
+Started POST "/api/users/signup" for ::1 at 2021-04-03 13:22:10 +0800
+Processing by UsersController#signup as */*
+  Parameters: {"email"=>"test3@test.com", "password"=>"[FILTERED]", "user"=>{"email"=>"test3@test.com", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 633.4ms | Allocations: 1128)
+
+
+  
+NoMethodError (undefined method `retrieve_hash_password' for UsersHelper:Module):
+  
+app/controllers/users_controller.rb:9:in `signup'
+Started POST "/api/users/signup" for ::1 at 2021-04-03 13:23:49 +0800
+  [1m[35m (319.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#signup as */*
+  Parameters: {"email"=>"test3@test.com", "password"=>"[FILTERED]", "user"=>{"email"=>"test3@test.com", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 894.9ms | Allocations: 4349)
+
+
+  
+NameError (undefined local variable or method `password' for #<ActionView::Base:0x007fc59ec544d0>
+Did you mean?  password_field):
+  
+app/helpers/users_helper.rb:7:in `retrieve_hash_password'
+app/controllers/users_controller.rb:9:in `signup'
+Started POST "/api/users/signup" for ::1 at 2021-04-03 13:25:12 +0800
+Processing by UsersController#signup as */*
+  Parameters: {"email"=>"test3@test.com", "password"=>"[FILTERED]", "user"=>{"email"=>"test3@test.com", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (223.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:11:in `signup'
+  [1m[36mUser Create (281.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "test3@test.com"], ["password", "$2a$12$D7tqBIGZjmtN4b0uzdAMiuQlwJ5nlsI2kPDu0N/BbAUeRODojvoh."], ["created_at", "2021-04-03 05:25:14.021347"], ["updated_at", "2021-04-03 05:25:14.021347"]]
+  ↳ app/controllers/users_controller.rb:11:in `signup'
+  [1m[36mTRANSACTION (212.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:11:in `signup'
+Completed 200 OK in 1343ms (Views: 0.4ms | ActiveRecord: 1605.9ms | Allocations: 5557)
+
+
+Started POST "/api/users/login" for ::1 at 2021-04-03 13:25:18 +0800
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"test@test.com", "password"=>"[FILTERED]", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (314.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `login'
+Completed 200 OK in 1226ms (Views: 0.1ms | ActiveRecord: 526.3ms | Allocations: 1729)
+
+
+Started POST "/api/users/login" for ::1 at 2021-04-03 13:25:20 +0800
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"test@test.com", "password"=>"[FILTERED]", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (211.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `login'
+Completed 400 Bad Request in 630ms (Views: 0.1ms | ActiveRecord: 211.4ms | Allocations: 951)
+
+
+Started POST "/api/users/login" for ::1 at 2021-04-03 13:25:23 +0800
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"test2@test.com", "password"=>"[FILTERED]", "user"=>{"email"=>"test2@test.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (211.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test2@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `login'
+Completed 200 OK in 623ms (Views: 0.1ms | ActiveRecord: 211.8ms | Allocations: 1055)
+
+
+Started GET "/api/users" for ::1 at 2021-04-03 13:25:25 +0800
+Processing by UsersController#index as */*
+  [1m[36mUser Load (211.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:64:in `index'
+Completed 200 OK in 430ms (Views: 218.5ms | ActiveRecord: 211.5ms | Allocations: 1410)
+
+
+Started POST "/api/users/signup" for ::1 at 2021-04-03 13:26:53 +0800
+  [1m[35m (212.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#signup as */*
+  Parameters: {"email"=>"test5@test.com", "password"=>"[FILTERED]", "user"=>{"email"=>"test5@test.com", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (298.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:11:in `signup'
+  [1m[36mUser Create (311.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "test5@test.com"], ["password", "$2a$12$puSsRPUcwyQsG8Wlhs9/OeFga7NYft/ILCBrLWaBwBgNC8uiboyQG"], ["created_at", "2021-04-03 05:27:00.210783"], ["updated_at", "2021-04-03 05:27:00.210783"]]
+  ↳ app/controllers/users_controller.rb:11:in `signup'
+  [1m[36mTRANSACTION (306.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:11:in `signup'
+Completed 200 OK in 1425ms (Views: 0.4ms | ActiveRecord: 1745.9ms | Allocations: 6682)
+
+
+Started POST "/api/users/login" for ::1 at 2021-04-03 13:27:06 +0800
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"test5@test.com", "password"=>"[FILTERED]", "user"=>{"email"=>"test5@test.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (309.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test5@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `login'
+Completed 200 OK in 1243ms (Views: 0.2ms | ActiveRecord: 520.7ms | Allocations: 2159)
+
+
+Started GET "/api/users" for ::1 at 2021-04-03 13:27:09 +0800
+Processing by UsersController#index as */*
+  [1m[36mUser Load (211.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:64:in `index'
+Completed 200 OK in 529ms (Views: 317.3ms | ActiveRecord: 211.7ms | Allocations: 1510)
+
+
+Started GET "/api/shops" for ::1 at 2021-04-03 13:27:22 +0800
+Processing by ShopsController#index as */*
+  [1m[36mShop Load (308.3ms)[0m  [1m[34mSELECT "shops".* FROM "shops"[0m
+  ↳ app/controllers/shops_controller.rb:29:in `index'
+Completed 200 OK in 1272ms (Views: 247.0ms | ActiveRecord: 1023.3ms | Allocations: 5023)
+
+
+Started GET "/api/books" for ::1 at 2021-04-03 13:27:26 +0800
+Processing by BooksController#index as */*
+  [1m[36mBook Load (212.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:32:in `index'
+Completed 200 OK in 1049ms (Views: 219.1ms | ActiveRecord: 828.1ms | Allocations: 6875)
+
+
+Started GET "/api/orders" for ::1 at 2021-04-03 13:27:29 +0800
+Processing by OrdersController#index as */*
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1397)
+
+
+  
+NoMethodError (undefined method `arity' for :shops:Symbol):
+  
+app/models/order.rb:2:in `<class:Order>'
+app/models/order.rb:1:in `<main>'
+app/controllers/orders_controller.rb:23:in `index'
+Started GET "/api/orders" for ::1 at 2021-04-03 13:27:37 +0800
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (211.9ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:29:in `index'
+Completed 200 OK in 999ms (Views: 221.1ms | ActiveRecord: 777.3ms | Allocations: 4607)
+
+
+Started GET "/api/orders" for ::1 at 2021-04-03 13:27:40 +0800
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (210.7ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:29:in `index'
+Completed 200 OK in 424ms (Views: 212.6ms | ActiveRecord: 210.7ms | Allocations: 1329)
+
+
+Started POST "/api/orders" for ::1 at 2021-04-03 13:27:43 +0800
+Processing by OrdersController#create as */*
+  Parameters: {"users_id"=>2, "shops_id"=>1, "order"=>{"users_id"=>2, "shops_id"=>1}}
+  [1m[36mTRANSACTION (214.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/orders_controller.rb:7:in `create'
+  [1m[36mOrder Create (211.2ms)[0m  [1m[32mINSERT INTO "orders" ("created_at", "updated_at", "users_id", "shops_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2021-04-03 05:27:43.792226"], ["updated_at", "2021-04-03 05:27:43.792226"], ["users_id", 2], ["shops_id", 1]]
+  ↳ app/controllers/orders_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (326.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/orders_controller.rb:7:in `create'
+Completed 200 OK in 967ms (Views: 0.4ms | ActiveRecord: 752.3ms | Allocations: 2548)
+
+
+Started GET "/api/orders" for ::1 at 2021-04-03 13:27:47 +0800
+Processing by OrdersController#index as */*
+  [1m[36mOrder Load (327.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:29:in `index'
+Completed 200 OK in 678ms (Views: 350.2ms | ActiveRecord: 327.4ms | Allocations: 1416)
+
+
+Started GET "/api/orders/1" for ::1 at 2021-04-03 13:27:51 +0800
+Processing by OrdersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mOrder Load (744.9ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:34:in `show'
+Completed 200 OK in 1180ms (Views: 0.4ms | ActiveRecord: 744.9ms | Allocations: 1111)
+
+
+Started GET "/api/books/1" for ::1 at 2021-04-03 13:27:53 +0800
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (313.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:37:in `show'
+Completed 200 OK in 839ms (Views: 0.5ms | ActiveRecord: 313.4ms | Allocations: 1128)
+
+
