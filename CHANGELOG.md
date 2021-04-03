@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.2...v0.1.3) (2021-04-03)
+
+
+### Bug Fixes
+
+* 🐛 fix wrong text ([f4f4d61](https://github.com/yeukfei02/ecommerce-api/commit/f4f4d615af6c633c77309cd73c9c1b67faa1f0e6))
+
 ### [0.1.2](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.1...v0.1.2) (2021-04-03)
 
 
