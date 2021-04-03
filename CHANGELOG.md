@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.1...v0.1.2) (2021-04-03)
+
+
+### Bug Fixes
+
+* 🐛 remove .env ([6262cc0](https://github.com/yeukfei02/ecommerce-api/commit/6262cc0581cbc9ee155854438a428467edec493c))
+* 🐛 remove development.log ([796122d](https://github.com/yeukfei02/ecommerce-api/commit/796122df0e1cbeadb2e0bf77b3d2ed9d9ab136ba))
+* 🐛 update .gitignore ([e2c9766](https://github.com/yeukfei02/ecommerce-api/commit/e2c9766cae154ebfd6577330a08d9dcc7c1dcf8e))
+
 ### 0.1.1 (2021-04-03)
 
 
