@@ -1,10 +1,11 @@
 class OrdersController < ApplicationController
     def create
         request_body = JSON.parse(request.raw_post)
+        order_detail = request_body['order_detail']
         users_id = request_body['users_id']
         shops_id = request_body['shops_id']
 
-        @order = Order.create(users_id: users_id, shops_id: shops_id)
+        @order = Order.create(order_detail: order_detail, users_id: users_id, shops_id: shops_id)
 
         if @order
             data = {

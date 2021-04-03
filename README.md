@@ -6,6 +6,8 @@ documentation: https://documenter.getpostman.com/view/3827865/TzCP8Tks
 
 api url: https://ecommerce-api-rails.herokuapp.com/
 
+cms url: https://ecommerce-api-rails.herokuapp.com/admin
+
 ## Requirement
 
 - install ruby (v2.6.6)
@@ -16,7 +18,7 @@ api url: https://ecommerce-api-rails.herokuapp.com/
 
 ## Testing and run
 
-```
+```zsh
 // install ruby dependencies
 $ bundle install
 
@@ -46,4 +48,15 @@ $ rails db:migrate:up
 
 // db migration down
 $ rails db:migrate:down
+```
+
+## ActiveAdmin
+
+```zsh
+// create admin view
+$ rails generate active_admin:resource <resourcesName>
+
+// open localhost:3000/admin
+email: admin@admin.com
+password: adminadmin
 ```
