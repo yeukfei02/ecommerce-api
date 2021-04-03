@@ -15,6 +15,10 @@ gem 'puma', '~> 5.0'
 gem 'bcrypt', '~> 3.1.16'
 # Use jwt for token
 gem 'jwt', '~> 2.2.2'
+# activeadmin for cms ui
+gem 'activeadmin', '~> 2.9.0'
+# activeadmin dependencies
+gem 'devise', '~> 4.7.3'
 # IDE tools for code completion, inline documentation, and static analysis
 gem 'solargraph', '~> 0.40.4'
 # code style checking and code formatting tool
