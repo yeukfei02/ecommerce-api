@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.5](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.4...v0.1.5) (2021-04-03)
+
+
+### Features
+
+* 🎸 add activeadmin ([384dc7c](https://github.com/yeukfei02/ecommerce-api/commit/384dc7ca38f7d792abb25c29518c8858ec63c488))
+
 ### [0.1.4](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.3...v0.1.4) (2021-04-03)
 
 
