@@ -4,7 +4,7 @@ ecommerce-api
 
 documentation: https://documenter.getpostman.com/view/3827865/TzCP8Tks
 
-api url:
+api url: https://ecommerce-api-rails.herokuapp.com/
 
 ## Requirement
 
