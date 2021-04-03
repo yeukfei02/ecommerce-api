@@ -28,7 +28,7 @@ Rails.application.routes.draw do
 
     # post '/orders', to: 'orders#create'
     # get '/orders', to: 'orders#index'
-    # get '/usordersers/:id', to: 'orders#show'
+    # get '/orders/:id', to: 'orders#show'
 
     resources :shops, :books, :orders
   end
