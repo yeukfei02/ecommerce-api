@@ -1,3 +1,3 @@
 class Order < ApplicationRecord
-    belongs_to :users, :shops
+    belongs_to :user, :shop
 end
