@@ -92,7 +92,7 @@ class UsersController < ApplicationController
                 old_password = request_body['old_password']
                 new_password = request_body['new_password']
 
-                if @user.password == old_password
+                if @user.password == helpers.get_hash_password(old_password)
                     @user.update(password: new_password)
 
                     data = {
