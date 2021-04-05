@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.6](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.5...v0.1.6) (2021-04-05)
+
+
+### Bug Fixes
+
+* fix change_password func ([ddcf391](https://github.com/yeukfei02/ecommerce-api/commit/ddcf3919ba532615c133b0d3ba77fccbaa74dee5))
+
 ### [0.1.5](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.4...v0.1.5) (2021-04-03)
 
 
