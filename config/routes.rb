@@ -6,10 +6,7 @@ Rails.application.routes.draw do
   
   root 'main#index'
 
-  # get '/', to: 'main#index'
-  scope '/' do
-    resources :main
-  end
+  get '/', to: 'main#index'
 
   scope '/api' do
     post '/users/signup', to: 'users#signup'
@@ -18,22 +15,20 @@ Rails.application.routes.draw do
     get '/users/:id', to: 'users#show'
     put '/users/change-password/:id', to: 'users#change_password'
 
-    # post '/shops', to: 'shops#create'
-    # get '/shops', to: 'shops#index'
-    # get '/shops/:id', to: 'shops#show'
-    # put '/shops/:id', to: 'shops#update'
-    # delete '/shops/:id', to: 'shops#destroy'
+    post '/shops', to: 'shops#create'
+    get '/shops', to: 'shops#index'
+    get '/shops/:id', to: 'shops#show'
+    put '/shops/:id', to: 'shops#update'
+    delete '/shops/:id', to: 'shops#destroy'
 
-    # post '/books', to: 'books#create'
-    # get '/books', to: 'books#index'
-    # get '/books/:id', to: 'books#show'
-    # put '/books/:id', to: 'books#update'
-    # delete '/books/:id', to: 'books#destroy'
+    post '/books', to: 'books#create'
+    get '/books', to: 'books#index'
+    get '/books/:id', to: 'books#show'
+    put '/books/:id', to: 'books#update'
+    delete '/books/:id', to: 'books#destroy'
 
-    # post '/orders', to: 'orders#create'
-    # get '/orders', to: 'orders#index'
-    # get '/orders/:id', to: 'orders#show'
-
-    resources :shops, :books, :orders
+    post '/orders', to: 'orders#create'
+    get '/orders', to: 'orders#index'
+    get '/orders/:id', to: 'orders#show'
   end
 end

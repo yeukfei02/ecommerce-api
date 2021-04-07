@@ -13,12 +13,12 @@ class BooksController < ApplicationController
             data = {
                 message: 'createBooks'
             }
-            render :json => data, :status => 200
+            render json: data, status: 200
         else
             data = {
                 message: 'createBooks error'
             }
-            render :json => data, :status => 400
+            render json: data, status: 400
         end
     end
 
@@ -29,7 +29,7 @@ class BooksController < ApplicationController
             message: 'getBooks',
             books: @books
         }
-        render :json => data, :status => 200
+        render json: data, status: 200
     end
 
     def show
@@ -40,14 +40,14 @@ class BooksController < ApplicationController
                 message: 'getBookByid',
                 book: @book
             }
-            render :json => data, :status => 200
+            render json: data, status: 200
         rescue => exception
             puts "error = #{exception}"
 
             data = {
                 message: 'getBookByid error, no this id',
             }
-            render :json => data, :status => 400
+            render json: data, status: 400
         end
     end
 
@@ -67,7 +67,7 @@ class BooksController < ApplicationController
                 data = {
                     message: 'updateBookByid'
                 }
-                render :json => data, :status => 200
+                render json: data, status: 200
             end
         rescue => exception
             puts "error = #{exception}"
@@ -75,7 +75,7 @@ class BooksController < ApplicationController
             data = {
                 message: 'updateBookByid error, no this id',
             }
-            render :json => data, :status => 400
+            render json: data, status: 400
         end
     end
 
@@ -89,7 +89,7 @@ class BooksController < ApplicationController
                 data = {
                     message: 'deleteBookByid'
                 }
-                render :json => data, :status => 200
+                render json: data, status: 200
             end
         rescue => exception
             puts "error = #{exception}"
@@ -97,7 +97,7 @@ class BooksController < ApplicationController
             data = {
                 message: 'deleteBookByid error, no this id',
             }
-            render :json => data, :status => 400
+            render json: data, status: 400
         end
     end
 end

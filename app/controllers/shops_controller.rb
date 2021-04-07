@@ -10,12 +10,12 @@ class ShopsController < ApplicationController
             data = {
                 message: 'createShops'
             }
-            render :json => data, :status => 200
+            render json: data, status: 200
         else
             data = {
                 message: 'createShops error'
             }
-            render :json => data, :status => 400
+            render json: data, status: 400
         end
     end
 
@@ -26,7 +26,7 @@ class ShopsController < ApplicationController
             message: 'getShops',
             shops: @shops
         }
-        render :json => data, :status => 200
+        render json: data, status: 200
     end
 
     def show
@@ -37,14 +37,14 @@ class ShopsController < ApplicationController
                 message: 'getShopByid',
                 shop: @shop
             }
-            render :json => data, :status => 200
+            render json: data, status: 200
         rescue => exception
             puts "error = #{exception}"
 
             data = {
                 message: 'getShopByid error, no this id',
             }
-            render :json => data, :status => 400
+            render json: data, status: 400
         end
     end
 
@@ -61,7 +61,7 @@ class ShopsController < ApplicationController
                 data = {
                     message: 'updateShopByid'
                 }
-                render :json => data, :status => 200
+                render json: data, status: 200
             end
         rescue => exception
             puts "error = #{exception}"
@@ -69,7 +69,7 @@ class ShopsController < ApplicationController
             data = {
                 message: 'updateShopByid error, no this id',
             }
-            render :json => data, :status => 400
+            render json: data, status: 400
         end
     end
 
@@ -83,7 +83,7 @@ class ShopsController < ApplicationController
                 data = {
                     message: 'deleteShopByid'
                 }
-                render :json => data, :status => 200
+                render json: data, status: 200
             end
         rescue => exception
             puts "error = #{exception}"
@@ -91,7 +91,7 @@ class ShopsController < ApplicationController
             data = {
                 message: 'deleteShopByid error, no this id',
             }
-            render :json => data, :status => 400
+            render json: data, status: 400
         end
     end
 end
