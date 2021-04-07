@@ -14,12 +14,12 @@ class UsersController < ApplicationController
             data = {
                 message: 'signup'
             }
-            render :json => data, :status => 200
+            render json: data, status: 200
         else
             data = {
                 message: 'signup error'
             }
-            render :json => data, :status => 400
+            render json: data, status: 400
         end
     end
 
@@ -39,18 +39,18 @@ class UsersController < ApplicationController
                     message: 'login',
                     token: token
                 }
-                render :json => data, :status => 200
+                render json: data, status: 200
             else
                 data = {
                     message: 'login error, wrong password'
                 }
-                render :json => data, :status => 400
+                render json: data, status: 400
             end
         else
             data = {
                 message: 'login error'
             }
-            render :json => data, :status => 400
+            render json: data, status: 400
         end
     end
 
@@ -61,7 +61,7 @@ class UsersController < ApplicationController
             message: 'getUsers',
             users: @users
         }
-        render :json => data, :status => 200
+        render json: data, status: 200
     end
 
     def show
@@ -72,14 +72,14 @@ class UsersController < ApplicationController
                 message: 'getUserByid',
                 user: @user
             }
-            render :json => data, :status => 200
+            render json: data, status: 200
         rescue => exception
             puts "error = #{exception}"
 
             data = {
                 message: 'getUserByid error, no this id',
             }
-            render :json => data, :status => 400
+            render json: data, status: 400
         end
     end
 
@@ -98,12 +98,12 @@ class UsersController < ApplicationController
                     data = {
                         message: 'changePassword'
                     }
-                    render :json => data, :status => 200
+                    render json: data, status: 200
                 else
                     data = {
                         message: 'changePassword error, wrong old password'
                     }
-                    render :json => data, :status => 400
+                    render json: data, status: 400
                 end
             end
         rescue => exception
@@ -112,7 +112,7 @@ class UsersController < ApplicationController
             data = {
                 message: 'changePassword error, no this id',
             }
-            render :json => data, :status => 400
+            render json: data, status: 400
         end
     end
 end

@@ -11,12 +11,12 @@ class OrdersController < ApplicationController
             data = {
                 message: 'createOrders'
             }
-            render :json => data, :status => 200
+            render json: data, status: 200
         else
             data = {
                 message: 'createOrders error'
             }
-            render :json => data, :status => 400
+            render json: data, status: 400
         end
     end
 
@@ -27,7 +27,7 @@ class OrdersController < ApplicationController
             message: 'getOrders',
             orders: @orders
         }
-        render :json => data, :status => 200
+        render json: data, status: 200
     end
 
     def show
@@ -38,14 +38,14 @@ class OrdersController < ApplicationController
                 message: 'getOrderByid',
                 order: @order
             }
-            render :json => data, :status => 200
+            render json: data, status: 200
         rescue => exception
             puts "error = #{exception}"
 
             data = {
                 message: 'getOrderByid error, no this id',
             }
-            render :json => data, :status => 400
+            render json: data, status: 400
         end
     end
 end
