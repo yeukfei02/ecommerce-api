@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.8](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.7...v0.1.8) (2021-04-17)
+
+
+### Bug Fixes
+
+* 🐛 add .idea in .gitignore ([5da70cc](https://github.com/yeukfei02/ecommerce-api/commit/5da70cc43caf1b0bf30d05d8755d1de24029faad))
+
 ### [0.1.7](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.6...v0.1.7) (2021-04-07)
 
 
