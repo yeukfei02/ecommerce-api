@@ -1,5 +1,5 @@
 ActiveAdmin.register Shop do
-    menu :label => "Shops", :priority => 4
+    menu label: "Shops", priority: 4
 
     permit_params :name, :address
   
@@ -24,6 +24,4 @@ ActiveAdmin.register Shop do
       end
       f.actions
     end
-
 end
-  

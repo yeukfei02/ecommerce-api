@@ -1,5 +1,5 @@
 ActiveAdmin.register Book do
-    menu :label => "Books", :priority => 5
+    menu label: "Books", priority: 5
 
     permit_params :name, :author, :price, :quantity, :shops_id
   
@@ -29,10 +29,8 @@ ActiveAdmin.register Book do
         f.input :author
         f.input :price
         f.input :quantity
-        f.input :shops_id, :as => :select, :collection => Shop.all.collect {|shop| [shop.name, shop.id] }
+        f.input :shops_id, as: :select, collection: Shop.all.collect { |shop| [shop.name, shop.id] }
       end
       f.actions
     end
-
 end
-  
