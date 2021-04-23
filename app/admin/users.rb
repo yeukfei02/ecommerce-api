@@ -1,5 +1,5 @@
 ActiveAdmin.register User do
-    menu :label => "Users", :priority => 3
+    menu label: "Users", priority: 3
 
     permit_params :email
     
@@ -21,6 +21,4 @@ ActiveAdmin.register User do
       end
       f.actions
     end
-
 end
-  

@@ -1,5 +1,5 @@
 ActiveAdmin.register Order do
-    menu :label => "Orders", :priority => 6
+    menu label: "Orders", priority: 6
 
     permit_params :order_detail, :users_id, :shops_id
   
@@ -22,11 +22,9 @@ ActiveAdmin.register Order do
     form do |f|
       f.inputs do
         f.input :order_detail
-        f.input :users_id, :as => :select, :collection => User.all.collect {|user| [user.email, user.id] }
-        f.input :shops_id, :as => :select, :collection => Shop.all.collect {|shop| [shop.name, shop.id] }
+        f.input :users_id, as: :select, collection: User.all.collect { |user| [user.email, user.id] }
+        f.input :shops_id, as: :select, collection: Shop.all.collect { |shop| [shop.name, shop.id] }
       end
       f.actions
     end
-
 end
-  
