@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.9](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.8...v0.1.9) (2021-04-23)
+
+
+### Features
+
+* add validation in model ([204ef77](https://github.com/yeukfei02/ecommerce-api/commit/204ef77dfb8c1dce36c7db9cc00a172a81d2790e))
+
 ### [0.1.8](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.7...v0.1.8) (2021-04-17)
 
 
