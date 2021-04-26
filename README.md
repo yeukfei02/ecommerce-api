@@ -34,7 +34,7 @@ $ rails generate controller <controllerName>
 // create model
 $ rails generate model <modelName>
 
-// change table schema/add/remove column
+// create migration file
 $ rails generate migration <migrationName>
 
 // db migration
@@ -48,6 +48,9 @@ $ rails db:migrate:up
 
 // db migration down
 $ rails db:migrate:down
+
+// list routes
+$ rails routes
 ```
 
 ## ActiveAdmin
