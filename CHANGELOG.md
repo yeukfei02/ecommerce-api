@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.12](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.11...v0.1.12) (2021-05-21)
+
+
+### Features
+
+* 🎸 add pry-rails lib ([2aac768](https://github.com/yeukfei02/ecommerce-api/commit/2aac7689f92b4e02e7b6a41670ededa6d9a52cbc))
+
 ### [0.1.11](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.10...v0.1.11) (2021-04-26)
 
 ### [0.1.10](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.9...v0.1.10) (2021-04-23)
