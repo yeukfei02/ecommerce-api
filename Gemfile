@@ -25,8 +25,6 @@ gem 'solargraph', '~> 0.40.4'
 gem 'rubocop', '~> 1.12.0'
 # classes, modules and methods and reports any code smells it finds
 gem 'reek', '~> 6.0.3'
-# rails c syntax highlight
-gem "pry-rails", "~> 0.3.9", :group => :development
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
@@ -57,6 +55,8 @@ group :development do
   gem 'rack-mini-profiler', '~> 2.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  # rails c syntax highlight
+  gem 'pry-rails', '~> 0.3.9'
 end
 
 group :test do
