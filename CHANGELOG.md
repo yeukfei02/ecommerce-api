@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.13](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.12...v0.1.13) (2021-06-04)
+
+
+### Bug Fixes
+
+* 🐛 fix pry-rails in Gemfile ([eb07964](https://github.com/yeukfei02/ecommerce-api/commit/eb07964bb6070fb3eaf8c608ea9c112098ae0e09))
+
 ### [0.1.12](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.11...v0.1.12) (2021-05-21)
 
 
