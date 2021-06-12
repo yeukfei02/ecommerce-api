@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.14](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.13...v0.1.14) (2021-06-12)
+
+
+### Bug Fixes
+
+* 🐛 fix routes ([84dd8c8](https://github.com/yeukfei02/ecommerce-api/commit/84dd8c8fc1381b21bcb93df4247516cec93ad3a0))
+* 🐛 fix try catch var ([189bec9](https://github.com/yeukfei02/ecommerce-api/commit/189bec928be4b30c046b8f135d46fadf173ccb54))
+
 ### [0.1.13](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.12...v0.1.13) (2021-06-04)
 
 
