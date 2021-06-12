@@ -39,8 +39,8 @@ class OrdersController < ApplicationController
                 order: @order
             }
             render json: data, status: 200
-        rescue => exception
-            puts "error = #{exception}"
+        rescue => e
+            puts "error = #{e}"
 
             data = {
                 message: 'getOrderByid error, no this id',
