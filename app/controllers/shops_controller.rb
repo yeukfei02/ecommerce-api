@@ -38,8 +38,8 @@ class ShopsController < ApplicationController
                 shop: @shop
             }
             render json: data, status: 200
-        rescue => exception
-            puts "error = #{exception}"
+        rescue => e
+            puts "error = #{e}"
 
             data = {
                 message: 'getShopByid error, no this id',
@@ -63,8 +63,8 @@ class ShopsController < ApplicationController
                 }
                 render json: data, status: 200
             end
-        rescue => exception
-            puts "error = #{exception}"
+        rescue => e
+            puts "error = #{e}"
 
             data = {
                 message: 'updateShopByid error, no this id',
@@ -85,8 +85,8 @@ class ShopsController < ApplicationController
                 }
                 render json: data, status: 200
             end
-        rescue => exception
-            puts "error = #{exception}"
+        rescue => e
+            puts "error = #{e}"
 
             data = {
                 message: 'deleteShopByid error, no this id',

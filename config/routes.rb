@@ -4,9 +4,9 @@ Rails.application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   
-  root 'main#index'
+  # root 'main#index'
 
-  get '/', to: 'main#index'
+  get '/api', to: 'main#index'
 
   scope '/api' do
     post '/users/signup', to: 'users#signup'

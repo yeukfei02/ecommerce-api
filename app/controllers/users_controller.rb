@@ -73,8 +73,8 @@ class UsersController < ApplicationController
                 user: @user
             }
             render json: data, status: 200
-        rescue => exception
-            puts "error = #{exception}"
+        rescue => e
+            puts "error = #{e}"
 
             data = {
                 message: 'getUserByid error, no this id',
@@ -106,8 +106,8 @@ class UsersController < ApplicationController
                     render json: data, status: 400
                 end
             end
-        rescue => exception
-            puts "error = #{exception}"
+        rescue => e
+            puts "error = #{e}"
 
             data = {
                 message: 'changePassword error, no this id',

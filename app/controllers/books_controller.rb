@@ -41,8 +41,8 @@ class BooksController < ApplicationController
                 book: @book
             }
             render json: data, status: 200
-        rescue => exception
-            puts "error = #{exception}"
+        rescue => e
+            puts "error = #{e}"
 
             data = {
                 message: 'getBookByid error, no this id',
@@ -69,8 +69,8 @@ class BooksController < ApplicationController
                 }
                 render json: data, status: 200
             end
-        rescue => exception
-            puts "error = #{exception}"
+        rescue => e
+            puts "error = #{e}"
 
             data = {
                 message: 'updateBookByid error, no this id',
@@ -91,8 +91,8 @@ class BooksController < ApplicationController
                 }
                 render json: data, status: 200
             end
-        rescue => exception
-            puts "error = #{exception}"
+        rescue => e
+            puts "error = #{e}"
 
             data = {
                 message: 'deleteBookByid error, no this id',
