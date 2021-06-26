@@ -8,10 +8,10 @@ class ShopsController < ApplicationController
 
         if @shop
             @message = 'createShops'
-            render 'create', status: 200
+            render :create, status: 200
         else
             @message = 'createShops error'
-            render 'create', status: 400
+            render :create, status: 400
         end
     end
 
@@ -19,7 +19,7 @@ class ShopsController < ApplicationController
         @shops = Shop.all
 
         @message = 'getShops'
-        render 'index', status: 200
+        render :index, status: 200
     end
 
     def show
@@ -27,12 +27,12 @@ class ShopsController < ApplicationController
             @shop = Shop.find(params[:id])
 
             @message = 'getShopById'
-            render 'show', status: 200
+            render :show, status: 200
         rescue => e
             puts "error = #{e}"
 
             @message = 'getShopById error, no this id'
-            render 'show', status: 400
+            render :show, status: 400
         end
     end
 
@@ -47,13 +47,13 @@ class ShopsController < ApplicationController
                 @shop.update(name: name, address: address)
 
                 @message = 'updateShopById'
-                render 'update', status: 200
+                render :update, status: 200
             end
         rescue => e
             puts "error = #{e}"
 
             @message = 'updateShopById error, no this id'
-            render 'update', status: 400
+            render :update, status: 400
         end
     end
 
@@ -65,13 +65,13 @@ class ShopsController < ApplicationController
                 @shop.destroy
 
                 @message = 'deleteShopById'
-                render 'destroy', status: 200
+                render :destroy, status: 200
             end
         rescue => e
             puts "error = #{e}"
 
             @message = 'deleteShopById error, no this id'
-            render 'destroy', status: 400
+            render :destroy, status: 400
         end
     end
 end
