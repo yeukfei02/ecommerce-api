@@ -7,44 +7,32 @@ class ShopsController < ApplicationController
         @shop = Shop.create(name: name, address: address)
 
         if @shop
-            data = {
-                message: 'createShops'
-            }
-            render json: data, status: 200
+            @message = 'createShops'
+            render 'create', status: 200
         else
-            data = {
-                message: 'createShops error'
-            }
-            render json: data, status: 400
+            @message = 'createShops error'
+            render 'create', status: 400
         end
     end
 
     def index
         @shops = Shop.all
 
-        data = {
-            message: 'getShops',
-            shops: @shops
-        }
-        render json: data, status: 200
+        @message = 'getShops'
+        render 'index', status: 200
     end
 
     def show
         begin
             @shop = Shop.find(params[:id])
 
-            data = {
-                message: 'getShopByid',
-                shop: @shop
-            }
-            render json: data, status: 200
+            @message = 'getShopById'
+            render 'show', status: 200
         rescue => e
             puts "error = #{e}"
 
-            data = {
-                message: 'getShopByid error, no this id',
-            }
-            render json: data, status: 400
+            @message = 'getShopById error, no this id'
+            render 'show', status: 400
         end
     end
 
@@ -58,18 +46,14 @@ class ShopsController < ApplicationController
                 address = request_body['address']
                 @shop.update(name: name, address: address)
 
-                data = {
-                    message: 'updateShopByid'
-                }
-                render json: data, status: 200
+                @message = 'updateShopById'
+                render 'update', status: 200
             end
         rescue => e
             puts "error = #{e}"
 
-            data = {
-                message: 'updateShopByid error, no this id',
-            }
-            render json: data, status: 400
+            @message = 'updateShopById error, no this id'
+            render 'update', status: 400
         end
     end
 
@@ -80,18 +64,14 @@ class ShopsController < ApplicationController
             if @shop
                 @shop.destroy
 
-                data = {
-                    message: 'deleteShopByid'
-                }
-                render json: data, status: 200
+                @message = 'deleteShopById'
+                render 'destroy', status: 200
             end
         rescue => e
             puts "error = #{e}"
 
-            data = {
-                message: 'deleteShopByid error, no this id',
-            }
-            render json: data, status: 400
+            @message = 'deleteShopById error, no this id'
+            render 'destroy', status: 400
         end
     end
 end

@@ -10,44 +10,32 @@ class BooksController < ApplicationController
         @book = Book.create(name: name, author: author, price: price, quantity: quantity, shops_id: shops_id)
 
         if @book
-            data = {
-                message: 'createBooks'
-            }
-            render json: data, status: 200
+            @message = 'createBooks'
+            render 'create', status: 200
         else
-            data = {
-                message: 'createBooks error'
-            }
-            render json: data, status: 400
+            @message = 'createBooks error'
+            render 'create', status: 400
         end
     end
 
     def index
         @books = Book.all
 
-        data = {
-            message: 'getBooks',
-            books: @books
-        }
-        render json: data, status: 200
+        @message = 'getBooks'
+        render 'index', status: 200
     end
 
     def show
         begin
             @book = Book.find(params[:id])
 
-            data = {
-                message: 'getBookByid',
-                book: @book
-            }
-            render json: data, status: 200
+            @message = 'getBookById'
+            render 'show', status: 200
         rescue => e
             puts "error = #{e}"
 
-            data = {
-                message: 'getBookByid error, no this id',
-            }
-            render json: data, status: 400
+            @message = 'getBookById error, no this id'
+            render 'show', status: 400
         end
     end
 
@@ -64,18 +52,14 @@ class BooksController < ApplicationController
                 shops_id = request_body['shops_id']
                 @book.update(name: name, author: author, price: price, quantity: quantity, shops_id: shops_id)
 
-                data = {
-                    message: 'updateBookByid'
-                }
-                render json: data, status: 200
+                @message = 'updateBookById'
+                render 'update', status: 200
             end
         rescue => e
             puts "error = #{e}"
 
-            data = {
-                message: 'updateBookByid error, no this id',
-            }
-            render json: data, status: 400
+            @message = 'updateBookById error, no this id'
+            render 'update', status: 400
         end
     end
 
@@ -86,18 +70,14 @@ class BooksController < ApplicationController
             if @book
                 @book.destroy
 
-                data = {
-                    message: 'deleteBookByid'
-                }
-                render json: data, status: 200
+                @message = 'deleteBookById'
+                render 'destroy', status: 200
             end
         rescue => e
             puts "error = #{e}"
 
-            data = {
-                message: 'deleteBookByid error, no this id',
-            }
-            render json: data, status: 400
+            @message = 'deleteBookById error, no this id'
+            render 'destroy', status: 400
         end
     end
 end
