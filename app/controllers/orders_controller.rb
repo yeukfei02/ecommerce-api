@@ -9,10 +9,10 @@ class OrdersController < ApplicationController
 
         if @order
             @message = 'createOrders'
-            render 'create', status: 200
+            render :create, status: 200
         else
             @message = 'createOrders error'
-            render 'create', status: 400
+            render :create, status: 400
         end
     end
 
@@ -20,7 +20,7 @@ class OrdersController < ApplicationController
         @orders = Order.all
 
         @message = 'getOrders'
-        render 'index', status: 200
+        render :index, status: 200
     end
 
     def show
@@ -28,12 +28,12 @@ class OrdersController < ApplicationController
             @order = Order.find(params[:id])
 
             @message = 'getOrderById'
-            render 'show', status: 200
+            render :show, status: 200
         rescue => e
             puts "error = #{e}"
 
             @message = 'getOrderById error, no this id'
-            render 'show', status: 400
+            render :show, status: 400
         end
     end
 end
