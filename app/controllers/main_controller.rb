@@ -1,8 +1,6 @@
 class MainController < ApplicationController
     def index
-        data = {
-            message: 'ecommerce-api'
-        }
-        render json: data, status: 200
+        @message = 'ecommerce-api'
+        render 'index', status: 200
     end
 end

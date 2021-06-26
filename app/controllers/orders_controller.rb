@@ -8,44 +8,32 @@ class OrdersController < ApplicationController
         @order = Order.create(order_detail: order_detail, users_id: users_id, shops_id: shops_id)
 
         if @order
-            data = {
-                message: 'createOrders'
-            }
-            render json: data, status: 200
+            @message = 'createOrders'
+            render 'create', status: 200
         else
-            data = {
-                message: 'createOrders error'
-            }
-            render json: data, status: 400
+            @message = 'createOrders error'
+            render 'create', status: 400
         end
     end
 
     def index
         @orders = Order.all
 
-        data = {
-            message: 'getOrders',
-            orders: @orders
-        }
-        render json: data, status: 200
+        @message = 'getOrders'
+        render 'index', status: 200
     end
 
     def show
         begin
             @order = Order.find(params[:id])
 
-            data = {
-                message: 'getOrderByid',
-                order: @order
-            }
-            render json: data, status: 200
+            @message = 'getOrderById'
+            render 'show', status: 200
         rescue => e
             puts "error = #{e}"
 
-            data = {
-                message: 'getOrderByid error, no this id',
-            }
-            render json: data, status: 400
+            @message = 'getOrderById error, no this id'
+            render 'show', status: 400
         end
     end
 end
