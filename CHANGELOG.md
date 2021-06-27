@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.17](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.16...v0.1.17) (2021-06-27)
+
+
+### Bug Fixes
+
+* 🐛 add defualt response format to json ([1e50075](https://github.com/yeukfei02/ecommerce-api/commit/1e500754f3f64f9f215b3146d82c3a25656ecfe6))
+* 🐛 fix controller var ([df3a8c6](https://github.com/yeukfei02/ecommerce-api/commit/df3a8c633d35a9cb7712bbec7b79e1f10bb83f5d))
+* 🐛 fix default_format_json for not admin route ([76d6464](https://github.com/yeukfei02/ecommerce-api/commit/76d6464fe453bb9e4e89e5d02c7cdcf215a89d11))
+
 ### [0.1.16](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.15...v0.1.16) (2021-06-26)
 
 
