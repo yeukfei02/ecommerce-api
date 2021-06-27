@@ -4,6 +4,8 @@ class ApplicationController < ActionController::Base
     before_action :default_format_json
 
     def default_format_json
-        request.format = 'json'
+        if !request.fullpath.include? '/admin'
+            request.format = 'json'
+        end
     end
 end
