@@ -4,9 +4,9 @@ class ShopsController < ApplicationController
         name = request_body['name']
         address = request_body['address']
 
-        @shop = Shop.create(name: name, address: address)
+        shop = Shop.create(name: name, address: address)
 
-        if @shop
+        if shop.present?
             @message = 'createShops'
             render :create, status: 200
         else
@@ -38,13 +38,13 @@ class ShopsController < ApplicationController
 
     def update
         begin
-            @shop = Shop.find(params[:id])
+            shop = Shop.find(params[:id])
 
-            if @shop
+            if shop.present?
                 request_body = JSON.parse(request.raw_post)
                 name = request_body['name']
                 address = request_body['address']
-                @shop.update(name: name, address: address)
+                shop.update(name: name, address: address)
 
                 @message = 'updateShopById'
                 render :update, status: 200
@@ -59,10 +59,10 @@ class ShopsController < ApplicationController
 
     def destroy
         begin
-            @shop = Shop.find(params[:id])
+            shop = Shop.find(params[:id])
 
-            if @shop
-                @shop.destroy
+            if shop.present?
+                shop.destroy
 
                 @message = 'deleteShopById'
                 render :destroy, status: 200

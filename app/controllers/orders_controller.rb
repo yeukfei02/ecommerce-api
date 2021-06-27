@@ -5,9 +5,9 @@ class OrdersController < ApplicationController
         users_id = request_body['users_id']
         shops_id = request_body['shops_id']
 
-        @order = Order.create(order_detail: order_detail, users_id: users_id, shops_id: shops_id)
+        order = Order.create(order_detail: order_detail, users_id: users_id, shops_id: shops_id)
 
-        if @order
+        if order.present?
             @message = 'createOrders'
             render :create, status: 200
         else
