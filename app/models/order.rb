@@ -1,8 +1,8 @@
 class Order < ApplicationRecord
-    has_many :users
-    has_many :shops
+  belongs_to :user
+  belongs_to :shop
 
-    validates :order_detail, presence: true, allow_blank: false, allow_nil: false
-    validates :users_id, presence: true, allow_blank: false, allow_nil: false, numericality: { only_integer: true }
-    validates :shops_id, presence: true, allow_blank: false, allow_nil: false, numericality: { only_integer: true }
+  validates :order_detail, presence: true, allow_blank: false, allow_nil: false
+  validates :users_id, presence: true, allow_blank: false, allow_nil: false, numericality: { only_integer: true }
+  validates :shops_id, presence: true, allow_blank: false, allow_nil: false, numericality: { only_integer: true }
 end
