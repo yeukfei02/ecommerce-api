@@ -19,6 +19,8 @@ gem 'jwt', '~> 2.2.2'
 gem 'activeadmin', '~> 2.9.0'
 # activeadmin dependencies
 gem 'devise', '~> 4.7.3'
+# generate model schema in comment
+gem 'annotate', '~> 3.1'
 # IDE tools for code completion, inline documentation, and static analysis
 gem 'solargraph', '~> 0.40.4'
 # code style checking and code formatting tool
