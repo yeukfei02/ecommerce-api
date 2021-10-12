@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.18](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.17...v0.1.18) (2021-10-12)
+
+
+### Features
+
+* add annotate lib ([90c217b](https://github.com/yeukfei02/ecommerce-api/commit/90c217b6e2719cbc090cb6eb08334c758ce25fc1))
+
+
+### Bug Fixes
+
+* 🐛 update model ([0413ef0](https://github.com/yeukfei02/ecommerce-api/commit/0413ef0c097283e880cf41af5b250bf56261a6ed))
+
 ### [0.1.17](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.16...v0.1.17) (2021-06-27)
 
 
