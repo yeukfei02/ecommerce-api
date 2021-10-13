@@ -1,5 +1,5 @@
 ActiveAdmin.register AdminUser do
-  menu :label => "Admin Users", :priority => 2
+  menu label: 'Admin Users', priority: 2
 
   permit_params :email, :password, :password_confirmation
 
@@ -23,5 +23,4 @@ ActiveAdmin.register AdminUser do
     end
     f.actions
   end
-
 end

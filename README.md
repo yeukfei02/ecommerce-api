@@ -1,3 +1,4 @@
+
 # ecommerce-api
 
 ecommerce-api
@@ -56,6 +57,12 @@ $ rails db:migrate:down
 
 // list routes
 $ rails routes
+
+// rubocop
+$ rubocop --auto-correct
+
+// reek
+$ reek
 ```
 
 ## ActiveAdmin
