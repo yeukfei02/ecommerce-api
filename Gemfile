@@ -20,12 +20,21 @@ gem 'webpacker', '~> 5.0'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'pronto', '~> 0.11.0'
+  gem 'pronto-brakeman', '~> 0.11.0'
+  gem 'pronto-fasterer', '~> 0.11.1'
+  gem 'pronto-reek', '~> 0.11.0'
+  gem 'pronto-rubocop', '~> 0.11.1'
   gem 'reek', '~> 6.0.3'
+  gem 'rexml', '~> 3.2'
   gem 'rubocop', '~> 1.12.0'
   gem 'solargraph', '~> 0.40.4'
+  gem 'thor', '~> 1.1'
 end
 
 group :development do
+  gem 'brakeman', '~> 5.1'
+  gem 'fasterer', '~> 0.9.0'
   gem 'listen', '~> 3.3'
   gem 'pry-rails', '~> 0.3.9'
   gem 'rack-mini-profiler', '~> 2.0'
