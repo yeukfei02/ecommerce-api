@@ -21,12 +21,6 @@ gem 'activeadmin', '~> 2.9.0'
 gem 'devise', '~> 4.7.3'
 # generate model schema in comment
 gem 'annotate', '~> 3.1'
-# IDE tools for code completion, inline documentation, and static analysis
-gem 'solargraph', '~> 0.40.4'
-# code style checking and code formatting tool
-gem 'rubocop', '~> 1.12.0'
-# classes, modules and methods and reports any code smells it finds
-gem 'reek', '~> 6.0.3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
@@ -44,6 +38,12 @@ gem 'jbuilder', '~> 2.11.2'
 gem 'bootsnap', '>= 1.4.4', require: false
 
 group :development, :test do
+  # IDE tools for code completion, inline documentation, and static analysis
+  gem 'solargraph', '~> 0.40.4'
+  # code style checking and code formatting tool
+  gem 'rubocop', '~> 1.12.0'
+  # classes, modules and methods and reports any code smells it finds
+  gem 'reek', '~> 6.0.3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
 end
