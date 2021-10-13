@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.19](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.18...v0.1.19) (2021-10-13)
+
+
+### Bug Fixes
+
+* 🐛 add rubocop and reek lint and format ([cbff799](https://github.com/yeukfei02/ecommerce-api/commit/cbff7996174c3dd36ccc188edb968b6f065a536e))
+* 🐛 move lib to dev and test ([ad3ba0f](https://github.com/yeukfei02/ecommerce-api/commit/ad3ba0f9469e609f7b6277bf15bcefa6f23eac37))
+
 ### [0.1.18](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.17...v0.1.18) (2021-10-12)
 
 
