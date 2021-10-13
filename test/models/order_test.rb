@@ -14,7 +14,7 @@
 #  index_orders_on_shops_id  (shops_id)
 #  index_orders_on_users_id  (users_id)
 #
-require "test_helper"
+require 'test_helper'
 
 class OrderTest < ActiveSupport::TestCase
   # test "the truth" do

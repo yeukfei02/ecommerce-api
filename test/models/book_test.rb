@@ -15,7 +15,7 @@
 #
 #  index_books_on_shops_id  (shops_id)
 #
-require "test_helper"
+require 'test_helper'
 
 class BookTest < ActiveSupport::TestCase
   # test "the truth" do
