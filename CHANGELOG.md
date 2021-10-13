@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.20](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.19...v0.1.20) (2021-10-13)
+
+
+### Features
+
+* 🎸 add pronto github actions ([d42b8ac](https://github.com/yeukfei02/ecommerce-api/commit/d42b8acd91be3d1e44eb1221a5994a9630e121d2))
+* 🎸 add pronto, brakeman, fasterer lib ([2f46a77](https://github.com/yeukfei02/ecommerce-api/commit/2f46a779a72c33efe31cc18e87d2af4944ef7f80))
+
+
+### Bug Fixes
+
+* 🐛 fix Gemfile ([cfdc909](https://github.com/yeukfei02/ecommerce-api/commit/cfdc909e03b9af91ec3bb8c35103a8bc20010748))
+* 🐛 update pronto.yml ruby version ([7da7fd4](https://github.com/yeukfei02/ecommerce-api/commit/7da7fd4cd287c4c2e5bd9ea47358ec614bea4f1a))
+
 ### [0.1.19](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.18...v0.1.19) (2021-10-13)
 
 
