@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.21](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.20...v0.1.21) (2021-10-18)
+
+
+### Features
+
+* add pronto-rails_best_practices ([edfb05d](https://github.com/yeukfei02/ecommerce-api/commit/edfb05d0f3b5e3951939d1bdd71f2610dd1ac075))
+
+
+### Bug Fixes
+
+* 🐛 update Gemfile.lock for heroku ([ed8a136](https://github.com/yeukfei02/ecommerce-api/commit/ed8a136d72c088639757652bae0484d0e17c056a))
+
 ### [0.1.20](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.19...v0.1.20) (2021-10-13)
 
 
