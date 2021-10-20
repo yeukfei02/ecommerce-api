@@ -20,6 +20,7 @@ gem 'webpacker', '~> 5.0'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'factory_bot', '~> 6.2'
   gem 'pronto', '~> 0.11.0'
   gem 'pronto-brakeman', '~> 0.11.0'
   gem 'pronto-fasterer', '~> 0.11.1'
@@ -28,6 +29,7 @@ group :development, :test do
   gem 'pronto-rubocop', '~> 0.11.1'
   gem 'reek', '~> 6.0.3'
   gem 'rexml', '~> 3.2'
+  gem 'rspec-rails', '~> 5.0'
   gem 'rubocop', '~> 1.12.0'
   gem 'solargraph', '~> 0.40.4'
   gem 'thor', '~> 1.1'
