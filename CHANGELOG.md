@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.22](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.21...v0.1.22) (2021-10-20)
+
+
+### Features
+
+* 🎸 add rspec-rails and factory_bot lib ([7308adb](https://github.com/yeukfei02/ecommerce-api/commit/7308adbf1c87797b65e3ce2b8fdb61cc2a770f37))
+
 ### [0.1.21](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.20...v0.1.21) (2021-10-18)
 
 
