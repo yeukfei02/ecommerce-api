@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.23](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.22...v0.1.23) (2021-10-27)
+
+
+### Features
+
+* 🎸 add rack-cors lib ([8720f66](https://github.com/yeukfei02/ecommerce-api/commit/8720f66a2827520bcea133f2127ec96a35087373))
+
 ### [0.1.22](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.21...v0.1.22) (2021-10-20)
 
 
