@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.25](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.24...v0.1.25) (2021-11-05)
+
+
+### Bug Fixes
+
+* 🐛 update procfile ([7a0405d](https://github.com/yeukfei02/ecommerce-api/commit/7a0405d65934aa9decc197cbc651366f9674843c))
+
 ### [0.1.24](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.23...v0.1.24) (2021-11-05)
 
 
