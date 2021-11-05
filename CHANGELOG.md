@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.24](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.23...v0.1.24) (2021-11-05)
+
+
+### Bug Fixes
+
+* 🐛 fix .ruby-version ([ffeafbd](https://github.com/yeukfei02/ecommerce-api/commit/ffeafbd4b651a5486dda1a3a84a08b4e0e3653a3))
+* 🐛 fix cors ([023353a](https://github.com/yeukfei02/ecommerce-api/commit/023353ad1454fc10149a464ea11615b3b77e4259))
+* 🐛 update database.yml ([c3f190c](https://github.com/yeukfei02/ecommerce-api/commit/c3f190c687f071fe5160611087c033facb91559a))
+
 ### [0.1.23](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.22...v0.1.23) (2021-10-27)
 
 
