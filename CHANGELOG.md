@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.26](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.25...v0.1.26) (2021-11-21)
+
+
+### Features
+
+* 🎸 add .rubocop.yml and fix rubocop auto correct ([b702030](https://github.com/yeukfei02/ecommerce-api/commit/b702030dfdcb82f3340c88312741bc49bf980425))
+
+
+### Bug Fixes
+
+* 🐛 fix pronto.yml ([00a8033](https://github.com/yeukfei02/ecommerce-api/commit/00a8033f71b348a982c881b57336eb2540f78f7f))
+* 🐛 fix pronto.yml ([6ebf281](https://github.com/yeukfei02/ecommerce-api/commit/6ebf281b6fe60dfb3afcc25f029d8f6f8cc222a8))
+* 🐛 fix pronto.yml ([5dbc9e4](https://github.com/yeukfei02/ecommerce-api/commit/5dbc9e47b9a58e97bd11d23c9c378c7630fdd036))
+* 🐛 update rails_helper ([890ffad](https://github.com/yeukfei02/ecommerce-api/commit/890ffad920d1fb58044bf4421d5c8520cf24d7bc))
+
 ### [0.1.25](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.24...v0.1.25) (2021-11-05)
 
 
