@@ -19,11 +19,8 @@ jobs:
         with:
           ruby-version: ${{ matrix.ruby }}
 
-      - name: Install ruby dependencies
-        run: bundle install
-
       - name: Setup pronto
-        run: gem install pronto pronto-rubocop pronto-reek pronto-brakeman pronto-fasterer pronto-rails_best_practices
+        run: gem install pronto pronto-rubocop pronto-reek pronto-brakeman pronto-fasterer pronto-rails_best_practices rubocop rubocop-performance rubocop-rails rubocop-rspec
 
       - name: Run Pronto
         run: pronto run -f github_status github_pr -c origin/${{ github.base_ref }}
