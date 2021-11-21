@@ -17,6 +17,7 @@ gem 'rack-cors', '~> 1.1'
 gem 'rails', '~> 6.1.3', '>= 6.1.3.1'
 gem 'sass-rails', '>= 6'
 gem 'turbolinks', '~> 5'
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'webpacker', '~> 5.0'
 
 group :development, :test do
@@ -32,6 +33,9 @@ group :development, :test do
   gem 'rexml', '~> 3.2'
   gem 'rspec-rails', '~> 5.0'
   gem 'rubocop', '~> 1.12.0'
+  gem 'rubocop-performance', '~> 1.12'
+  gem 'rubocop-rails', '~> 2.12'
+  gem 'rubocop-rspec', '~> 2.4'
   gem 'solargraph', '~> 0.40.4'
   gem 'thor', '~> 1.1'
 end
@@ -51,5 +55,3 @@ group :test do
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
-
-gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
