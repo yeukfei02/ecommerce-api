@@ -12,10 +12,10 @@ class UsersController < ApplicationController
 
     if user.present?
       @message = 'signup'
-      render :signup, status: 200
+      render :signup, status: :ok
     else
       @message = 'signup error'
-      render :signup, status: 400
+      render :signup, status: :bad_request
     end
   end
 
@@ -32,14 +32,14 @@ class UsersController < ApplicationController
         @token = helpers.get_jwt_token(email)
 
         @message = 'login'
-        render :login, status: 200
+        render :login, status: :ok
       else
         @message = 'login error, wrong password'
-        render :login, status: 400
+        render :login, status: :bad_request
       end
     else
       @message = 'login error'
-      render :login, status: 400
+      render :login, status: :bad_request
     end
   end
 
@@ -47,19 +47,19 @@ class UsersController < ApplicationController
     @users = User.all
 
     @message = 'getUsers'
-    render :index, status: 200
+    render :index, status: :ok
   end
 
   def show
     @user = User.find(params[:id])
 
     @message = 'getUserById'
-    render :show, status: 200
+    render :show, status: :ok
   rescue StandardError => e
     puts "error = #{e}"
 
     @message = 'getUserById error, no this id'
-    render :show, status: 400
+    render :show, status: :bad_request
   end
 
   def change_password
@@ -74,16 +74,16 @@ class UsersController < ApplicationController
         user.update(password: new_password)
 
         @message = 'changePassword'
-        render :change_password, status: 200
+        render :change_password, status: :ok
       else
         @message = 'changePassword error, wrong old password'
-        render :change_password, status: 400
+        render :change_password, status: :bad_request
       end
     end
   rescue StandardError => e
     puts "error = #{e}"
 
     @message = 'changePassword error, no this id'
-    render :change_password, status: 400
+    render :change_password, status: :bad_request
   end
 end

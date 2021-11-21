@@ -1,6 +1,6 @@
 class MainController < ApplicationController
   def index
     @message = 'ecommerce-api'
-    render :index, status: 200
+    render :index, status: :ok
   end
 end
