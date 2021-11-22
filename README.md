@@ -63,6 +63,9 @@ $ rubocop --auto-correct
 
 // reek
 $ reek
+
+// audit Gemfile.lock
+$ bundler-audit
 ```
 
 ## ActiveAdmin
