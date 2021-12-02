@@ -32,28 +32,22 @@ $ bundle install
 $ yarn
 
 // run api in local
-$ rails server
+$ rails s
 
 // create controller
-$ rails generate controller <controllerName>
+$ rails g controller <controllerName>
 
 // create model
-$ rails generate model <modelName>
+$ rails g model <modelName>
 
 // create migration file
-$ rails generate migration <migrationName>
+$ rails g migration <migrationName>
 
 // db migration
 $ rails db:migrate
 
 // db rollback
 $ rails db:rollback
-
-// db migration up
-$ rails db:migrate:up
-
-// db migration down
-$ rails db:migrate:down
 
 // list routes
 $ rails routes
@@ -72,7 +66,7 @@ $ bundler-audit
 
 ```zsh
 // create admin view
-$ rails generate active_admin:resource <resourcesName>
+$ rails g active_admin:resource <resourcesName>
 
 // open localhost:3000/admin
 email: admin@admin.com
