@@ -6,19 +6,24 @@
 #  order_detail :string
 #  created_at   :datetime         not null
 #  updated_at   :datetime         not null
-#  shops_id     :bigint
-#  users_id     :bigint
+#  shop_id      :bigint
+#  user_id      :bigint
 #
 # Indexes
 #
-#  index_orders_on_shops_id  (shops_id)
-#  index_orders_on_users_id  (users_id)
+#  index_orders_on_shop_id  (shop_id)
+#  index_orders_on_user_id  (user_id)
+#
+# Foreign Keys
+#
+#  fk_rails_...  (shop_id => shops.id)
+#  fk_rails_...  (user_id => users.id)
 #
 class Order < ApplicationRecord
-  belongs_to :user
+  # association
   belongs_to :shop
+  belongs_to :user
 
-  validates :order_detail, presence: true, allow_blank: false
-  validates :users_id, presence: true, allow_blank: false, numericality: { only_integer: true }
-  validates :shops_id, presence: true, allow_blank: false, numericality: { only_integer: true }
+  # validation
+  validates :order_detail, presence: true
 end

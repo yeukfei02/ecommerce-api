@@ -2,9 +2,10 @@ require 'bcrypt'
 
 class UsersController < ApplicationController
   def signup
-    request_body = JSON.parse(request.raw_post)
-    email = request_body['email']
-    password = request_body['password']
+    params.require(%i[email password])
+
+    email = params['email']
+    password = params['password']
 
     hash_password = helpers.get_hash_password(password)
 
@@ -20,9 +21,10 @@ class UsersController < ApplicationController
   end
 
   def login
-    request_body = JSON.parse(request.raw_post)
-    email = request_body['email']
-    password = request_body['password']
+    params.require(%i[email password])
+
+    email = params['email']
+    password = params['password']
 
     user = User.find_by(email: email)
 
@@ -63,12 +65,13 @@ class UsersController < ApplicationController
   end
 
   def change_password
+    params.require(%i[id old_password new_password])
+
     user = User.find(params[:id])
 
     if user.present?
-      request_body = JSON.parse(request.raw_post)
-      old_password = request_body['old_password']
-      new_password = request_body['new_password']
+      old_password = params['old_password']
+      new_password = params['new_password']
 
       if user.password == helpers.get_hash_password(old_password)
         user.update(password: new_password)
