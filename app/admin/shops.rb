@@ -3,6 +3,10 @@ ActiveAdmin.register Shop do
 
   permit_params :name, :address
 
+  filter :name
+  filter :address
+  filter :created_at
+
   index do
     selectable_column
     id_column
@@ -13,9 +17,14 @@ ActiveAdmin.register Shop do
     actions
   end
 
-  filter :name
-  filter :address
-  filter :created_at
+  show do
+    attributes_table do
+      row :name
+      row :address
+      row :created_at
+      row :updated_at
+    end
+  end
 
   form do |f|
     f.inputs do

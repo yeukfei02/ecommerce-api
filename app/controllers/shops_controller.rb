@@ -1,8 +1,9 @@
 class ShopsController < ApplicationController
   def create
-    request_body = JSON.parse(request.raw_post)
-    name = request_body['name']
-    address = request_body['address']
+    params.require(%i[name address])
+
+    name = params['name']
+    address = params['address']
 
     shop = Shop.create(name: name, address: address)
 
@@ -35,12 +36,13 @@ class ShopsController < ApplicationController
   end
 
   def update
+    params.require(%i[id name address])
+
     shop = Shop.find(params[:id])
 
     if shop.present?
-      request_body = JSON.parse(request.raw_post)
-      name = request_body['name']
-      address = request_body['address']
+      name = params['name']
+      address = params['address']
       shop.update(name: name, address: address)
 
       @message = 'updateShopById'

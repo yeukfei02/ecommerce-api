@@ -9,8 +9,10 @@
 #  updated_at :datetime         not null
 #
 class Shop < ApplicationRecord
-  has_many :books
+  # association
+  has_many :books, dependent: :destroy
 
-  validates :name, presence: true, allow_blank: false
-  validates :address, presence: true, allow_blank: false
+  # validation
+  validates :name, presence: true
+  validates :address, presence: true
 end

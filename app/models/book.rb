@@ -9,18 +9,27 @@
 #  quantity   :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
-#  shops_id   :bigint
+#  shop_id    :bigint
+#  user_id    :bigint
 #
 # Indexes
 #
-#  index_books_on_shops_id  (shops_id)
+#  index_books_on_shop_id  (shop_id)
+#  index_books_on_user_id  (user_id)
+#
+# Foreign Keys
+#
+#  fk_rails_...  (shop_id => shops.id)
+#  fk_rails_...  (user_id => users.id)
 #
 class Book < ApplicationRecord
+  # association
   belongs_to :shop
+  belongs_to :user
 
-  validates :name, presence: true, allow_blank: false
-  validates :author, presence: true, allow_blank: false
-  validates :price, presence: true, allow_blank: false, numericality: { only_float: true }
-  validates :quantity, presence: true, allow_blank: false, numericality: { only_integer: true }
-  validates :shops_id, presence: true, allow_blank: false, numericality: { only_integer: true }
+  # validation
+  validates :name, presence: true
+  validates :author, presence: true
+  validates :price, presence: true, numericality: { only_float: true }
+  validates :quantity, presence: true, numericality: { only_integer: true }
 end
