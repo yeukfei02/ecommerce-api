@@ -22,7 +22,7 @@ RSpec.describe 'Users', type: :request do
   describe '002 - POST /api/users/login' do
     before do
       params = {
-        email: Faker::Internet.email,
+        email: 'test@email.com',
         password: 'test'
       }
       post '/api/users/login', params: params
