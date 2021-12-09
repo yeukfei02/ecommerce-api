@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.27](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.26...v0.1.27) (2021-12-09)
+
+
+### Features
+
+* 🎸 add awesome_print ([22659be](https://github.com/yeukfei02/ecommerce-api/commit/22659be888ab41cc2ff5657b7ccba075269867e3))
+* 🎸 add bundler-audit lib ([c890eef](https://github.com/yeukfei02/ecommerce-api/commit/c890eeff125e04aaf2d014d2e39ca53a238e06e2))
+* 🎸 add default timezone ([a1cdbd1](https://github.com/yeukfei02/ecommerce-api/commit/a1cdbd182fe82412298b419ed3b3a0b42188ea10))
+* 🎸 add dockerfile and update readme.md ([1064501](https://github.com/yeukfei02/ecommerce-api/commit/1064501654b37b6f83876748cc64b45670ff4896))
+* 🎸 add lograge lib ([1b364cd](https://github.com/yeukfei02/ecommerce-api/commit/1b364cd684e96678bc52b883f35c2ff08715c3fd))
+* 🎸 fix model and active admin page ([60f074c](https://github.com/yeukfei02/ecommerce-api/commit/60f074c6c42dafa766f6a0b8a39361abd967576d))
+
 ### [0.1.26](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.25...v0.1.26) (2021-11-21)
 
 
