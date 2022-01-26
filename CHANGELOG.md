@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.27...v0.2.0) (2022-01-26)
+
+
+### Features
+
+* 🎸 add factory and test case ([9a946ba](https://github.com/yeukfei02/ecommerce-api/commit/9a946ba167689353a456f7ba6ecfd9af28e2e679))
+* 🎸 add shoulda-matchers lib ([16ddfaa](https://github.com/yeukfei02/ecommerce-api/commit/16ddfaa574dcc0916157eaf990ce6dce94de50dd))
+
+
+### Bug Fixes
+
+* 🐛 fix test case ([8157ad9](https://github.com/yeukfei02/ecommerce-api/commit/8157ad935c9a9907aa0de0487320a038e16444ea))
+
 ### [0.1.27](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.26...v0.1.27) (2021-12-09)
 
 
