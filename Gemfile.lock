@@ -390,6 +390,8 @@ GEM
       rubyzip (>= 1.2.2)
     semantic_range (3.0.0)
     sexp_processor (4.15.3)
+    shoulda-matchers (5.1.0)
+      activesupport (>= 5.2.0)
     solargraph (0.40.4)
       backport (~> 1.1)
       benchmark
@@ -489,6 +491,7 @@ DEPENDENCIES
   rubocop-rspec (~> 2.4)
   sass-rails (>= 6)
   selenium-webdriver
+  shoulda-matchers (~> 5.1)
   solargraph (~> 0.40.4)
   spring
   thor (~> 1.1)

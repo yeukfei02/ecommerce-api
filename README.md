@@ -20,7 +20,7 @@ password: adminadmin
 - install gem
 - install bundle
 - install yarn
-- install node (v12+)
+- install node (v14+)
 
 ## Testing and run
 
@@ -51,6 +51,9 @@ $ rails db:rollback
 
 // list routes
 $ rails routes
+
+// run test case
+$ bundle exec rspec
 
 // rubocop
 $ rubocop --auto-correct

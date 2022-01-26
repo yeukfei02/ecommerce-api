@@ -40,6 +40,7 @@ group :development, :test do
   gem 'rubocop-performance', '~> 1.12'
   gem 'rubocop-rails', '~> 2.12'
   gem 'rubocop-rspec', '~> 2.4'
+  gem 'shoulda-matchers', '~> 5.1'
   gem 'solargraph', '~> 0.40.4'
   gem 'thor', '~> 1.1'
 end
