@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.1](https://github.com/yeukfei02/ecommerce-api/compare/v0.2.0...v0.2.1) (2022-02-10)
+
+
+### Features
+
+* 🎸 add model spec ([63a94a4](https://github.com/yeukfei02/ecommerce-api/commit/63a94a430524945684fe19e532f7b29633624ca8))
+
 ## [0.2.0](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.27...v0.2.0) (2022-01-26)
 
 
