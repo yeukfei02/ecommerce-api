@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ShopsController < ApplicationController
   def create
     params.require(%i[name address])
@@ -29,7 +31,7 @@ class ShopsController < ApplicationController
     @message = 'getShopById'
     render :show, status: :ok
   rescue StandardError => e
-    puts "error = #{e}"
+    Rails.logger.debug "error = #{e}"
 
     @message = 'getShopById error, no this id'
     render :show, status: :bad_request
@@ -49,7 +51,7 @@ class ShopsController < ApplicationController
       render :update, status: :ok
     end
   rescue StandardError => e
-    puts "error = #{e}"
+    Rails.logger.debug "error = #{e}"
 
     @message = 'updateShopById error, no this id'
     render :update, status: :bad_request
@@ -65,7 +67,7 @@ class ShopsController < ApplicationController
       render :destroy, status: :ok
     end
   rescue StandardError => e
-    puts "error = #{e}"
+    Rails.logger.debug "error = #{e}"
 
     @message = 'deleteShopById error, no this id'
     render :destroy, status: :bad_request

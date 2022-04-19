@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 ActiveAdmin.register AdminUser do
   menu label: 'Admin Users', priority: 2
 

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 ActiveAdmin.register Shop do
   menu label: 'Shops', priority: 4
 

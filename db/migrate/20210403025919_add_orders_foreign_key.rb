@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class AddOrdersForeignKey < ActiveRecord::Migration[6.1]
   def up
     change_table :orders do |t|
