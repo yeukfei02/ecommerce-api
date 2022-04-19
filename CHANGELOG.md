@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.2](https://github.com/yeukfei02/ecommerce-api/compare/v0.2.1...v0.2.2) (2022-04-19)
+
+
+### Bug Fixes
+
+* 🐛 fix test case and rubocop -A ([bb9a843](https://github.com/yeukfei02/ecommerce-api/commit/bb9a843a55bfc164d7ff6e3c4465d6e2911ea328))
+
 ### [0.2.1](https://github.com/yeukfei02/ecommerce-api/compare/v0.2.0...v0.2.1) (2022-02-10)
 
 
