@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class OrdersController < ApplicationController
   def create
     params.require(%i[order_detail shop_id user_id])
@@ -30,7 +32,7 @@ class OrdersController < ApplicationController
     @message = 'getOrderById'
     render :show, status: :ok
   rescue StandardError => e
-    puts "error = #{e}"
+    Rails.logger.debug "error = #{e}"
 
     @message = 'getOrderById error, no this id'
     render :show, status: :bad_request

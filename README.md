@@ -1,4 +1,3 @@
-
 # ecommerce-api
 
 ecommerce-api
@@ -57,6 +56,7 @@ $ bundle exec rspec
 
 // rubocop
 $ rubocop --auto-correct
+$ rubocop -A
 
 // reek
 $ reek

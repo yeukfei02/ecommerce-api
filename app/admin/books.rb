@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 ActiveAdmin.register Book do
   menu label: 'Books', priority: 5
 

@@ -2,6 +2,76 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.1](https://github.com/yeukfei02/ecommerce-api/compare/v0.2.0...v0.2.1) (2022-02-10)
+
+
+### Features
+
+* 🎸 add model spec ([63a94a4](https://github.com/yeukfei02/ecommerce-api/commit/63a94a430524945684fe19e532f7b29633624ca8))
+
+## [0.2.0](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.27...v0.2.0) (2022-01-26)
+
+
+### Features
+
+* 🎸 add factory and test case ([9a946ba](https://github.com/yeukfei02/ecommerce-api/commit/9a946ba167689353a456f7ba6ecfd9af28e2e679))
+* 🎸 add shoulda-matchers lib ([16ddfaa](https://github.com/yeukfei02/ecommerce-api/commit/16ddfaa574dcc0916157eaf990ce6dce94de50dd))
+
+
+### Bug Fixes
+
+* 🐛 fix test case ([8157ad9](https://github.com/yeukfei02/ecommerce-api/commit/8157ad935c9a9907aa0de0487320a038e16444ea))
+
+### [0.1.27](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.26...v0.1.27) (2021-12-09)
+
+
+### Features
+
+* 🎸 add awesome_print ([22659be](https://github.com/yeukfei02/ecommerce-api/commit/22659be888ab41cc2ff5657b7ccba075269867e3))
+* 🎸 add bundler-audit lib ([c890eef](https://github.com/yeukfei02/ecommerce-api/commit/c890eeff125e04aaf2d014d2e39ca53a238e06e2))
+* 🎸 add default timezone ([a1cdbd1](https://github.com/yeukfei02/ecommerce-api/commit/a1cdbd182fe82412298b419ed3b3a0b42188ea10))
+* 🎸 add dockerfile and update readme.md ([1064501](https://github.com/yeukfei02/ecommerce-api/commit/1064501654b37b6f83876748cc64b45670ff4896))
+* 🎸 add lograge lib ([1b364cd](https://github.com/yeukfei02/ecommerce-api/commit/1b364cd684e96678bc52b883f35c2ff08715c3fd))
+* 🎸 fix model and active admin page ([60f074c](https://github.com/yeukfei02/ecommerce-api/commit/60f074c6c42dafa766f6a0b8a39361abd967576d))
+
+### [0.1.26](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.25...v0.1.26) (2021-11-21)
+
+
+### Features
+
+* 🎸 add .rubocop.yml and fix rubocop auto correct ([b702030](https://github.com/yeukfei02/ecommerce-api/commit/b702030dfdcb82f3340c88312741bc49bf980425))
+
+
+### Bug Fixes
+
+* 🐛 fix pronto.yml ([00a8033](https://github.com/yeukfei02/ecommerce-api/commit/00a8033f71b348a982c881b57336eb2540f78f7f))
+* 🐛 fix pronto.yml ([6ebf281](https://github.com/yeukfei02/ecommerce-api/commit/6ebf281b6fe60dfb3afcc25f029d8f6f8cc222a8))
+* 🐛 fix pronto.yml ([5dbc9e4](https://github.com/yeukfei02/ecommerce-api/commit/5dbc9e47b9a58e97bd11d23c9c378c7630fdd036))
+* 🐛 update rails_helper ([890ffad](https://github.com/yeukfei02/ecommerce-api/commit/890ffad920d1fb58044bf4421d5c8520cf24d7bc))
+
+### [0.1.25](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.24...v0.1.25) (2021-11-05)
+
+
+### Bug Fixes
+
+* 🐛 update procfile ([7a0405d](https://github.com/yeukfei02/ecommerce-api/commit/7a0405d65934aa9decc197cbc651366f9674843c))
+
+### [0.1.24](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.23...v0.1.24) (2021-11-05)
+
+
+### Bug Fixes
+
+* 🐛 fix .ruby-version ([ffeafbd](https://github.com/yeukfei02/ecommerce-api/commit/ffeafbd4b651a5486dda1a3a84a08b4e0e3653a3))
+* 🐛 fix cors ([023353a](https://github.com/yeukfei02/ecommerce-api/commit/023353ad1454fc10149a464ea11615b3b77e4259))
+* 🐛 update database.yml ([c3f190c](https://github.com/yeukfei02/ecommerce-api/commit/c3f190c687f071fe5160611087c033facb91559a))
+
+### [0.1.23](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.22...v0.1.23) (2021-10-27)
+
+
+### Features
+
+* 🎸 add rack-cors lib ([8720f66](https://github.com/yeukfei02/ecommerce-api/commit/8720f66a2827520bcea133f2127ec96a35087373))
+
 ### [0.1.22](https://github.com/yeukfei02/ecommerce-api/compare/v0.1.21...v0.1.22) (2021-10-20)
 
 

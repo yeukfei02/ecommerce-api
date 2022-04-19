@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe 'Users', type: :request do
-  describe '001 - POST /api/users/signup' do
+  context '001 - POST /api/users/signup' do
     before do
       params = {
         email: Faker::Internet.email,
@@ -10,7 +12,7 @@ RSpec.describe 'Users', type: :request do
       post '/api/users/signup', params: params
     end
 
-    it 'test result' do
+    it 'return success' do
       response_body = JSON.parse(response.body)
       puts "response_body = #{response_body}"
       expect(response_body.present?).to be true
@@ -19,7 +21,7 @@ RSpec.describe 'Users', type: :request do
     end
   end
 
-  describe '002 - POST /api/users/login' do
+  context '002 - POST /api/users/login' do
     before do
       params = {
         email: 'test@email.com',
@@ -28,7 +30,7 @@ RSpec.describe 'Users', type: :request do
       post '/api/users/login', params: params
     end
 
-    it 'test result' do
+    it 'return success' do
       response_body = JSON.parse(response.body)
       puts "response_body = #{response_body}"
       expect(response_body.present?).to be true

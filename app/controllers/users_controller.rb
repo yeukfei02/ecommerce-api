@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'bcrypt'
 
 class UsersController < ApplicationController
@@ -58,7 +60,7 @@ class UsersController < ApplicationController
     @message = 'getUserById'
     render :show, status: :ok
   rescue StandardError => e
-    puts "error = #{e}"
+    Rails.logger.debug "error = #{e}"
 
     @message = 'getUserById error, no this id'
     render :show, status: :bad_request
@@ -84,7 +86,7 @@ class UsersController < ApplicationController
       end
     end
   rescue StandardError => e
-    puts "error = #{e}"
+    Rails.logger.debug "error = #{e}"
 
     @message = 'changePassword error, no this id'
     render :change_password, status: :bad_request

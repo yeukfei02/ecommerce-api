@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class BooksController < ApplicationController
   def create
     params.require(%i[name author price quantity shop_id user_id])
@@ -33,7 +35,7 @@ class BooksController < ApplicationController
     @message = 'getBookById'
     render :show, status: :ok
   rescue StandardError => e
-    puts "error = #{e}"
+    Rails.logger.debug "error = #{e}"
 
     @message = 'getBookById error, no this id'
     render :show, status: :bad_request
@@ -57,7 +59,7 @@ class BooksController < ApplicationController
       render :update, status: :ok
     end
   rescue StandardError => e
-    puts "error = #{e}"
+    Rails.logger.debug "error = #{e}"
 
     @message = 'updateBookById error, no this id'
     render :update, status: :bad_request
@@ -73,7 +75,7 @@ class BooksController < ApplicationController
       render :destroy, status: :ok
     end
   rescue StandardError => e
-    puts "error = #{e}"
+    Rails.logger.debug "error = #{e}"
 
     @message = 'deleteBookById error, no this id'
     render :destroy, status: :bad_request

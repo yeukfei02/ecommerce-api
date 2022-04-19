@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class AddOrdersColumn < ActiveRecord::Migration[6.1]
   def change
     add_column :orders, :order_detail, :string, after: :id

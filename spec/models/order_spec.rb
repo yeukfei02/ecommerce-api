@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: orders
@@ -26,12 +28,12 @@ RSpec.describe Order, type: :model do
     create(:order)
   end
 
-  describe 'associations' do
+  context 'associations' do
     it { is_expected.to belong_to(:shop).class_name('Shop') }
     it { is_expected.to belong_to(:user).class_name('User') }
   end
 
-  describe 'validations' do
+  context 'validations' do
     it { is_expected.to validate_presence_of(:order_detail) }
   end
 end
