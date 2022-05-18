@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.3](https://github.com/yeukfei02/ecommerce-api/compare/v0.2.2...v0.2.3) (2022-05-18)
+
+
+### Bug Fixes
+
+* 🐛 update ruby version and readme.md ([a2bf384](https://github.com/yeukfei02/ecommerce-api/commit/a2bf3845952a0b702ddbdf0f64309e411ec78ae3))
+
 ### [0.2.2](https://github.com/yeukfei02/ecommerce-api/compare/v0.2.1...v0.2.2) (2022-04-19)
 
 
