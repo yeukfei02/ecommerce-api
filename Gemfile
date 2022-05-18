@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.6'
+ruby '2.7.6'
 
 gem 'activeadmin', '~> 2.9.0'
 gem 'annotate', '~> 3.1'
