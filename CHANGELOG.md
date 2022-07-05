@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.4](https://github.com/yeukfei02/ecommerce-api/compare/v0.2.3...v0.2.4) (2022-07-05)
+
+
+### Bug Fixes
+
+* 🐛 remove pronto and update Gemfile.lock ([e1402c1](https://github.com/yeukfei02/ecommerce-api/commit/e1402c1dc34e5faee0c0457319327197795c4e0c))
+
 ### [0.2.3](https://github.com/yeukfei02/ecommerce-api/compare/v0.2.2...v0.2.3) (2022-05-18)
 
 
