@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_09_071913) do
+ActiveRecord::Schema.define(version: 2022_07_21_020046) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -50,7 +50,13 @@ ActiveRecord::Schema.define(version: 2021_12_09_071913) do
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "shop_id"
     t.bigint "user_id"
+    t.index ["author"], name: "index_books_on_author"
+    t.index ["created_at"], name: "index_books_on_created_at"
+    t.index ["name"], name: "index_books_on_name"
+    t.index ["price"], name: "index_books_on_price"
+    t.index ["quantity"], name: "index_books_on_quantity"
     t.index ["shop_id"], name: "index_books_on_shop_id"
+    t.index ["updated_at"], name: "index_books_on_updated_at"
     t.index ["user_id"], name: "index_books_on_user_id"
   end
 
@@ -60,7 +66,10 @@ ActiveRecord::Schema.define(version: 2021_12_09_071913) do
     t.string "order_detail"
     t.bigint "shop_id"
     t.bigint "user_id"
+    t.index ["created_at"], name: "index_orders_on_created_at"
+    t.index ["order_detail"], name: "index_orders_on_order_detail"
     t.index ["shop_id"], name: "index_orders_on_shop_id"
+    t.index ["updated_at"], name: "index_orders_on_updated_at"
     t.index ["user_id"], name: "index_orders_on_user_id"
   end
 
@@ -69,6 +78,10 @@ ActiveRecord::Schema.define(version: 2021_12_09_071913) do
     t.string "address"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["address"], name: "index_shops_on_address"
+    t.index ["created_at"], name: "index_shops_on_created_at"
+    t.index ["name"], name: "index_shops_on_name"
+    t.index ["updated_at"], name: "index_shops_on_updated_at"
   end
 
   create_table "users", force: :cascade do |t|
@@ -76,6 +89,10 @@ ActiveRecord::Schema.define(version: 2021_12_09_071913) do
     t.string "password"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["created_at"], name: "index_users_on_created_at"
+    t.index ["email"], name: "index_users_on_email"
+    t.index ["password"], name: "index_users_on_password"
+    t.index ["updated_at"], name: "index_users_on_updated_at"
   end
 
   add_foreign_key "books", "shops"
