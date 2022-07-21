@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.5](https://github.com/yeukfei02/ecommerce-api/compare/v0.2.4...v0.2.5) (2022-07-21)
+
+
+### Features
+
+* 🎸 add index ([6a7075c](https://github.com/yeukfei02/ecommerce-api/commit/6a7075c9388310055e822d9e81b75bb8001bce31))
+
+
+### Bug Fixes
+
+* 🐛 fix Gemfile.lock ([7aabc96](https://github.com/yeukfei02/ecommerce-api/commit/7aabc96dd0ea8bda5d0ed028f213cd2ed4b0d834))
+
 ### [0.2.4](https://github.com/yeukfei02/ecommerce-api/compare/v0.2.3...v0.2.4) (2022-07-05)
 
 
