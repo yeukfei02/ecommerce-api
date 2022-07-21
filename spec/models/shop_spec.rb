@@ -10,6 +10,13 @@
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
+# Indexes
+#
+#  index_shops_on_address     (address)
+#  index_shops_on_created_at  (created_at)
+#  index_shops_on_name        (name)
+#  index_shops_on_updated_at  (updated_at)
+#
 require 'rails_helper'
 
 RSpec.describe Shop, type: :model do

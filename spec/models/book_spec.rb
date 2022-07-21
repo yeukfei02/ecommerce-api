@@ -16,8 +16,14 @@
 #
 # Indexes
 #
-#  index_books_on_shop_id  (shop_id)
-#  index_books_on_user_id  (user_id)
+#  index_books_on_author      (author)
+#  index_books_on_created_at  (created_at)
+#  index_books_on_name        (name)
+#  index_books_on_price       (price)
+#  index_books_on_quantity    (quantity)
+#  index_books_on_shop_id     (shop_id)
+#  index_books_on_updated_at  (updated_at)
+#  index_books_on_user_id     (user_id)
 #
 # Foreign Keys
 #

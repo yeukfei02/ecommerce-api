@@ -10,6 +10,13 @@
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
+# Indexes
+#
+#  index_users_on_created_at  (created_at)
+#  index_users_on_email       (email)
+#  index_users_on_password    (password)
+#  index_users_on_updated_at  (updated_at)
+#
 require 'rails_helper'
 
 RSpec.describe User, type: :model do

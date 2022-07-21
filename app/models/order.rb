@@ -13,8 +13,11 @@
 #
 # Indexes
 #
-#  index_orders_on_shop_id  (shop_id)
-#  index_orders_on_user_id  (user_id)
+#  index_orders_on_created_at    (created_at)
+#  index_orders_on_order_detail  (order_detail)
+#  index_orders_on_shop_id       (shop_id)
+#  index_orders_on_updated_at    (updated_at)
+#  index_orders_on_user_id       (user_id)
 #
 # Foreign Keys
 #
