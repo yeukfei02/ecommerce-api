@@ -4,15 +4,6 @@ ecommerce-api
 
 documentation: <https://documenter.getpostman.com/view/3827865/TzCP8Tks>
 
-api url: <https://ecommerce-api-rails.herokuapp.com/>
-
-cms url: <https://ecommerce-api-rails.herokuapp.com/admin>
-
-```
-username: admin@admin.com
-password: adminadmin
-```
-
 ## Requirement
 
 - install ruby (v2.7.6)
